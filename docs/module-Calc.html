@@ -1,0 +1,2565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding meta -->
+    
+      
+        <meta name="author" content="Okoro Redemption" />
+      
+        <meta name="description" content="ToolJS Utility Library Documentation" />
+      
+    
+
+    <!-- Adding external script-->
+    
+      
+        <script src="./assets/vendor/jquery.min.js" ></script>
+      
+    
+
+    <!-- Adding external style-->
+    
+      
+    
+
+    <!-- Adding scripts-->
+    
+      
+        <script src="clean-jsdoc-custom.js"></script>
+      
+    
+
+    <!-- Adding style-->
+    
+      
+        <link type="text/css" rel="stylesheet" href="clean-jsdoc-custom.css">
+      
+    
+
+    <!-- Adding overlay script-->
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js" integrity="sha512-5R3ngaUdvyhXkQkIqTf/k+Noq3phjmrqlUQyQYbgfI34Mzcx7vLIIYTy/K1VMHkL33T709kfh5y6R9Xy/Cbt7Q==" crossorigin="anonymous"></script>
+    
+
+    <!-- Adding overlay style-->
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/css/OverlayScrollbars.min.css" integrity="sha512-pYQcc5kgavar0ah58/O8hw/6Tbo3mWlmQTmvoi1i96cBz7jQYS9as5J+Nfy32rAHY6CgR9ExwnFMcBdGVcKM7g==" crossorigin="anonymous" />
+    
+
+
+    <title>Calc</title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-light.css">
+    
+<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/>
+                <path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>
+
+</head>
+<body>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html"><div class="text">ToolJS Docs</div></a></h2><div class="search-box"><input type="text" placeholder="Search..." id="search-box" /><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-list-div"><ul><li><a href='./index.html' class='' id='' target=''>Home</a></li><li><a href='https://github.com/redeakaa/tooljs' class='' id='' target=''>Github</a></li><li><a href='' class='' id='' target=''>Plugins</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-create-plugin.html">Create a Plugin</a></li><li><a href="tutorial-dom-tuts.html">DOM Module Tutorials</a></li><li><a href="tutorial-getting-started.html">Getting Started</a></li></ul><h3>Classes</h3><ul><li><a href="ToolJS.html">ToolJS</a></li></ul><h3>Modules</h3><ul><li><a href="module-Calc.html">Calc</a><ul class='methods'><li data-type='method'><a href="module-Calc.html#.add">add</a></li><li data-type='method'><a href="module-Calc.html#.divide">divide</a></li><li data-type='method'><a href="module-Calc.html#.evaluate">evaluate</a></li><li data-type='method'><a href="module-Calc.html#.exponential">exponential</a></li><li data-type='method'><a href="module-Calc.html#.max">max</a></li><li data-type='method'><a href="module-Calc.html#.mean">mean</a></li><li data-type='method'><a href="module-Calc.html#.median">median</a></li><li data-type='method'><a href="module-Calc.html#.min">min</a></li><li data-type='method'><a href="module-Calc.html#.mode">mode</a></li><li data-type='method'><a href="module-Calc.html#.modulo">modulo</a></li><li data-type='method'><a href="module-Calc.html#.multiply">multiply</a></li><li data-type='method'><a href="module-Calc.html#.pow">pow</a></li><li data-type='method'><a href="module-Calc.html#.subtract">subtract</a></li></ul></li><li><a href="module-DOM.html">DOM</a><ul class='methods'><li data-type='method'><a href="module-DOM.html#.addClass">addClass</a></li><li data-type='method'><a href="module-DOM.html#.attr">attr</a></li><li data-type='method'><a href="module-DOM.html#.childrenEl">childrenEl</a></li><li data-type='method'><a href="module-DOM.html#.cloneEl">cloneEl</a></li><li data-type='method'><a href="module-DOM.html#.createEl">createEl</a></li><li data-type='method'><a href="module-DOM.html#.createText">createText</a></li><li data-type='method'><a href="module-DOM.html#.css">css</a></li><li data-type='method'><a href="module-DOM.html#.dataAttr">dataAttr</a></li><li data-type='method'><a href="module-DOM.html#.each">each</a></li><li data-type='method'><a href="module-DOM.html#.find">find</a></li><li data-type='method'><a href="module-DOM.html#.firstChildEl">firstChildEl</a></li><li data-type='method'><a href="module-DOM.html#.getAttr">getAttr</a></li><li data-type='method'><a href="module-DOM.html#.getEl">getEl</a></li><li data-type='method'><a href="module-DOM.html#.getStyle">getStyle</a></li><li data-type='method'><a href="module-DOM.html#.hasClass">hasClass</a></li><li data-type='method'><a href="module-DOM.html#.height">height</a></li><li data-type='method'><a href="module-DOM.html#.html">html</a></li><li data-type='method'><a href="module-DOM.html#.isCollection">isCollection</a></li><li data-type='method'><a href="module-DOM.html#.isEl">isEl</a></li><li data-type='method'><a href="module-DOM.html#.isNodeList">isNodeList</a></li><li data-type='method'><a href="module-DOM.html#.lastChildEl">lastChildEl</a></li><li data-type='method'><a href="module-DOM.html#.moveEl">moveEl</a></li><li data-type='method'><a href="module-DOM.html#.next">next</a></li><li data-type='method'><a href="module-DOM.html#.offset">offset</a></li><li data-type='method'><a href="module-DOM.html#.on">on</a></li><li data-type='method'><a href="module-DOM.html#.prev">prev</a></li><li data-type='method'><a href="module-DOM.html#.removeAttr">removeAttr</a></li><li data-type='method'><a href="module-DOM.html#.removeChild">removeChild</a></li><li data-type='method'><a href="module-DOM.html#.removeClass">removeClass</a></li><li data-type='method'><a href="module-DOM.html#.removeEl">removeEl</a></li><li data-type='method'><a href="module-DOM.html#.replaceEl">replaceEl</a></li><li data-type='method'><a href="module-DOM.html#.setAttr">setAttr</a></li><li data-type='method'><a href="module-DOM.html#.siblings">siblings</a></li><li data-type='method'><a href="module-DOM.html#.styleEl">styleEl</a></li><li data-type='method'><a href="module-DOM.html#.text">text</a></li><li data-type='method'><a href="module-DOM.html#.toggleClass">toggleClass</a></li><li data-type='method'><a href="module-DOM.html#.ToolJSNodeList">ToolJSNodeList</a></li><li data-type='method'><a href="module-DOM.html#.width">width</a></li><li data-type='method'><a href="module-DOM.html#.wrap">wrap</a></li></ul></li><li><a href="module-Num.html">Num</a><ul class='methods'><li data-type='method'><a href="module-Num.html#.decrement">decrement</a></li><li data-type='method'><a href="module-Num.html#.increment">increment</a></li><li data-type='method'><a href="module-Num.html#.inRange">inRange</a></li><li data-type='method'><a href="module-Num.html#.isEven">isEven</a></li><li data-type='method'><a href="module-Num.html#.isNum">isNum</a></li><li data-type='method'><a href="module-Num.html#.isOdd">isOdd</a></li><li data-type='method'><a href="module-Num.html#.rand">rand</a></li><li data-type='method'><a href="module-Num.html#.range">range</a></li><li data-type='method'><a href="module-Num.html#.round">round</a></li></ul></li><li><a href="module-Obj.html">Obj</a><ul class='methods'><li data-type='method'><a href="module-Obj.html#.entries">entries</a></li><li data-type='method'><a href="module-Obj.html#.extend">extend</a></li><li data-type='method'><a href="module-Obj.html#.forEach">forEach</a></li><li data-type='method'><a href="module-Obj.html#.includes">includes</a></li><li data-type='method'><a href="module-Obj.html#.indexOf">indexOf</a></li><li data-type='method'><a href="module-Obj.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="module-Obj.html#.isObj">isObj</a></li><li data-type='method'><a href="module-Obj.html#.isObj">isObj</a></li><li data-type='method'><a href="module-Obj.html#.keyAt">keyAt</a></li><li data-type='method'><a href="module-Obj.html#.keys">keys</a></li><li data-type='method'><a href="module-Obj.html#.pop">pop</a></li><li data-type='method'><a href="module-Obj.html#.push">push</a></li><li data-type='method'><a href="module-Obj.html#.remove">remove</a></li><li data-type='method'><a href="module-Obj.html#.set">set</a></li><li data-type='method'><a href="module-Obj.html#.toArray">toArray</a></li><li data-type='method'><a href="module-Obj.html#.toObj">toObj</a></li><li data-type='method'><a href="module-Obj.html#.toPropArray">toPropArray</a></li><li data-type='method'><a href="module-Obj.html#.valueAt">valueAt</a></li><li data-type='method'><a href="module-Obj.html#.valueOf">valueOf</a></li><li data-type='method'><a href="module-Obj.html#.values">values</a></li></ul></li><li><a href="module-Str.html">Str</a><ul class='methods'><li data-type='method'><a href="module-Str.html#.between">between</a></li><li data-type='method'><a href="module-Str.html#.camelCase">camelCase</a></li><li data-type='method'><a href="module-Str.html#.capitalize">capitalize</a></li><li data-type='method'><a href="module-Str.html#.charAt">charAt</a></li><li data-type='method'><a href="module-Str.html#.chars">chars</a></li><li data-type='method'><a href="module-Str.html#.compare">compare</a></li><li data-type='method'><a href="module-Str.html#.concat">concat</a></li><li data-type='method'><a href="module-Str.html#.endsWith">endsWith</a></li><li data-type='method'><a href="module-Str.html#.firstChar">firstChar</a></li><li data-type='method'><a href="module-Str.html#.firstToLower">firstToLower</a></li><li data-type='method'><a href="module-Str.html#.firstToUpper">firstToUpper</a></li><li data-type='method'><a href="module-Str.html#.getNums">getNums</a></li><li data-type='method'><a href="module-Str.html#.hasNums">hasNums</a></li><li data-type='method'><a href="module-Str.html#.htmldecode">htmldecode</a></li><li data-type='method'><a href="module-Str.html#.htmlencode">htmlencode</a></li><li data-type='method'><a href="module-Str.html#.isLower">isLower</a></li><li data-type='method'><a href="module-Str.html#.isString">isString</a></li><li data-type='method'><a href="module-Str.html#.isUpper">isUpper</a></li><li data-type='method'><a href="module-Str.html#.joinBy">joinBy</a></li><li data-type='method'><a href="module-Str.html#.lastChar">lastChar</a></li><li data-type='method'><a href="module-Str.html#.longest">longest</a></li><li data-type='method'><a href="module-Str.html#.lowerCase">lowerCase</a></li><li data-type='method'><a href="module-Str.html#.pad">pad</a></li><li data-type='method'><a href="module-Str.html#.random">random</a></li><li data-type='method'><a href="module-Str.html#.repeat">repeat</a></li><li data-type='method'><a href="module-Str.html#.replace">replace</a></li><li data-type='method'><a href="module-Str.html#.reverse">reverse</a></li><li data-type='method'><a href="module-Str.html#.shortest">shortest</a></li><li data-type='method'><a href="module-Str.html#.shuffle">shuffle</a></li><li data-type='method'><a href="module-Str.html#.slugify">slugify</a></li><li data-type='method'><a href="module-Str.html#.sort">sort</a></li><li data-type='method'><a href="module-Str.html#.startsWith">startsWith</a></li><li data-type='method'><a href="module-Str.html#.stripNums">stripNums</a></li><li data-type='method'><a href="module-Str.html#.stripSpecialChars">stripSpecialChars</a></li><li data-type='method'><a href="module-Str.html#.toggleCase">toggleCase</a></li><li data-type='method'><a href="module-Str.html#.toHashTag">toHashTag</a></li><li data-type='method'><a href="module-Str.html#.toLower">toLower</a></li><li data-type='method'><a href="module-Str.html#.toString">toString</a></li><li data-type='method'><a href="module-Str.html#.toUpper">toUpper</a></li><li data-type='method'><a href="module-Str.html#.trim">trim</a></li><li data-type='method'><a href="module-Str.html#.truncate">truncate</a></li><li data-type='method'><a href="module-Str.html#.upperCase">upperCase</a></li><li data-type='method'><a href="module-Str.html#.wordChunk">wordChunk</a></li><li data-type='method'><a href="module-Str.html#.wordCount">wordCount</a></li><li data-type='method'><a href="module-Str.html#.words">words</a></li><li data-type='method'><a href="module-Str.html#.wordsExclude">wordsExclude</a></li></ul></li><li><a href="module-Utils.html">Utils</a><ul class='methods'><li data-type='method'><a href="module-Utils.html#.checkCookie">checkCookie</a></li><li data-type='method'><a href="module-Utils.html#.deleteCookie">deleteCookie</a></li><li data-type='method'><a href="module-Utils.html#.getCookie">getCookie</a></li><li data-type='method'><a href="module-Utils.html#.importScript">importScript</a></li><li data-type='method'><a href="module-Utils.html#.observeMutation">observeMutation</a></li><li data-type='method'><a href="module-Utils.html#.setCookie">setCookie</a></li><li data-type='method'><a href="module-Utils.html#.typeOf">typeOf</a></li></ul></li></ul></div>
+</nav>
+
+<div id="main">
+    
+    <h1 id='page-title' class="page-title">Calc</h1>
+    
+
+    
+
+
+
+
+<section>
+
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>This module contains mathematical methods and functions. Typical calculator functions</p></div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-since">Since:</dt>
+            <dd class="tag-since"><ul class="dummy"><li>v1.0.0</li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4936">line 4936</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".add">
+        <a href="#.add">#</a>
+        <span class="type-signature">(static) </span>add<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method sums two(2) or more numbers together and returns the sum.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The numbers to be summed up. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4657">line 4657</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the summation</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var numbers = [4, 4, 10];Calc.add(numbers); // returns 18;Calc.add(1, 2, 3, 4); // returns 10;Calc.add(numbers, 1, 2, 3, 4, [5, 5], 2); // returns 40;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".divide">
+        <a href="#.divide">#</a>
+        <span class="type-signature">(static) </span>divide<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method divides two(2) or more numbers and returns the result.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The numbers to be divided. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4721">line 4721</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the division</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.divide(10, 5); // returns 2var numbers = [10, 2, 3];var ans = Calc.divide(numbers); // returns 1.6666666667// ans can now be rounded up to n decimal placesNum.round(ans, 2); // returns 1.67</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".evaluate">
+        <a href="#.evaluate">#</a>
+        <span class="type-signature">(static) </span>evaluate<span class="signature">(expr)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method evaluates a mathematical expression(in string format) and returns the result. This only works for simple maths operators that uses &quot;+&quot;, &quot;-&quot;, &quot;/&quot;, &quot;*&quot;.<br>
+For a more devoted function see either of the following.<br>
+<a href="https://github.com/aviaryan/BigEval.js">BigEval.js Library</a><br>
+<a href="https://mathjs.org/index.html">Math.js Library</a><br>
+<a href="https://silentmatt.com/javascript-expression-evaluator/">JavaScript Expression Evaluator</a></p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>expr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The expression to be evaluated. Expression must be of type string. See example below</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4830">line 4830</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the evaluation.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.evaluate("10 + 5 - 1 * 2 / 4"); // returns 14.5</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".exponential">
+        <a href="#.exponential">#</a>
+        <span class="type-signature">(static) </span>exponential<span class="signature">(n1, n2)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the exponential of two(2) numbers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The first number.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>n2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The second number.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4800">line 4800</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The exponential of the two number.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.exponential(10, 5); // returns 100000</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".max">
+        <a href="#.max">#</a>
+        <span class="type-signature">(static) </span>max<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the maximum value is a list or array of numbers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A list of numbers to iterate over. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4746">line 4746</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The maximum value in the list.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.max(10, 5); // returns 10var numbers = [10, 2, 3];var ans = Calc.max(numbers, 20, 15, 1.5); // returns 20</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".mean">
+        <a href="#.mean">#</a>
+        <span class="type-signature">(static) </span>mean<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method calculates the mean(average) of a set of numbers and returns the value.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A set of numbers. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4848">line 4848</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The mean of the numbers</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.mean(1, 2, 3); // returns 2;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".median">
+        <a href="#.median">#</a>
+        <span class="type-signature">(static) </span>median<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method calculates the median(i.e the middle number) of a set of numbers and returns the value.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A set of numbers. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4865">line 4865</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The median of the numbers</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.median(1, 2, 3, 4); // returns 2.5;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".min">
+        <a href="#.min">#</a>
+        <span class="type-signature">(static) </span>min<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the minimum value is a list or array of numbers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A list of numbers to iterate over. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4765">line 4765</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The minimum value in the list.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.min(10, 5); // returns 5var numbers = [10, 2, 3];var ans = Calc.min(numbers, 20, 15, 1.5); // returns 1.5</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".mode">
+        <a href="#.mode">#</a>
+        <span class="type-signature">(static) </span>mode<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Array.&lt;Number>|Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method calculates the mode of a set of numbers, i.e the number(s) that appear the most. It returns an array of numbers if it finds more than one mode</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A set of numbers. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4890">line 4890</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The mode of the numbers</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.mode(1,2,3,1,2,4,7,8,1,1); // returns 1;Calc.mode(1,2,3,1,2,4,7,8); // returns [1, 2] because 1 and 2 appear the most in the list</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".modulo">
+        <a href="#.modulo">#</a>
+        <span class="type-signature">(static) </span>modulo<span class="signature">(n1, n2)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the modulo of two(2) numbers i.e the remainder of the division of the two numbers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The first number.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>n2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The second number.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4784">line 4784</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The modulo of the two number.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.modulo(10, 5); // returns 0Calc.modulo(5, 2); // returns 3</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".multiply">
+        <a href="#.multiply">#</a>
+        <span class="type-signature">(static) </span>multiply<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method multiplies two(2) or more numbers together and returns the product of the numbers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The numbers to be multiplied. Could be an array of numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4700">line 4700</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The product of the numbers</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var numbers = [1, 2, 3, 4];Calc.multiply(numbers); // returns 24;Calc.multiply(10, 2, 3, 4); // returns 240;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".pow">
+        <a href="#.pow">#</a>
+        <span class="type-signature">(static) </span>pow<span class="signature">(x, y)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method calculates and returns the power of x to y.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The number whose power is to be returned (x).</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>y</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The power value (y).</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4815">line 4815</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The power of x to y.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Calc.pow(2, 5); // returns 32</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".subtract">
+        <a href="#.subtract">#</a>
+        <span class="type-signature">(static) </span>subtract<span class="signature">(numbers)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method subtracts a list of numbers from right to left and returns the result.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>numbers</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Number></span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The numbers to be subtracted. Could be an array of numbers. Note that the order in which they are arranged matters.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line4679">line 4679</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the subtraction</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var numbers = [10, 4];Calc.subtract(numbers); // returns 6;Calc.subtract(1, 2, 3, 4); // returns -8;</code></pre>
+
+    </div>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<footer id="footer">
+  Copyright &copy; 2020 ToolJS Library Documentation
+</footer>
+
+<script src="scripts/third-party/prettify.js"></script>
+<script src="scripts/third-party/lang-css.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/third-party/fuse.js"></script>
+<script type="text/javascript" src="scripts/misc.js"></script>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/fix-code-block.js"></script>
+<script>
+  var list = [{"title":"create-plugin","link":"create-plugin"},{"title":"dom-tuts","link":"dom-tuts"},{"title":"getting-started","link":"getting-started"},{"title":"ToolJS","link":"<a href=\"ToolJS.html\">ToolJS</a>"},{"title":"Calc","link":"<a href=\"module-Calc.html\">Calc</a>"},{"title":"module:Calc.add","link":"<a href=\"module-Calc.html#.add\">module:Calc.add &rtrif; undefined</a>"},{"title":"module:Calc.divide","link":"<a href=\"module-Calc.html#.divide\">module:Calc.divide &rtrif; undefined</a>"},{"title":"module:Calc.evaluate","link":"<a href=\"module-Calc.html#.evaluate\">module:Calc.evaluate &rtrif; undefined</a>"},{"title":"module:Calc.exponential","link":"<a href=\"module-Calc.html#.exponential\">module:Calc.exponential &rtrif; undefined</a>"},{"title":"module:Calc.max","link":"<a href=\"module-Calc.html#.max\">module:Calc.max &rtrif; undefined</a>"},{"title":"module:Calc.mean","link":"<a href=\"module-Calc.html#.mean\">module:Calc.mean &rtrif; undefined</a>"},{"title":"module:Calc.median","link":"<a href=\"module-Calc.html#.median\">module:Calc.median &rtrif; undefined</a>"},{"title":"module:Calc.min","link":"<a href=\"module-Calc.html#.min\">module:Calc.min &rtrif; undefined</a>"},{"title":"module:Calc.mode","link":"<a href=\"module-Calc.html#.mode\">module:Calc.mode &rtrif; undefined</a>"},{"title":"module:Calc.modulo","link":"<a href=\"module-Calc.html#.modulo\">module:Calc.modulo &rtrif; undefined</a>"},{"title":"module:Calc.multiply","link":"<a href=\"module-Calc.html#.multiply\">module:Calc.multiply &rtrif; undefined</a>"},{"title":"module:Calc.pow","link":"<a href=\"module-Calc.html#.pow\">module:Calc.pow &rtrif; undefined</a>"},{"title":"module:Calc.subtract","link":"<a href=\"module-Calc.html#.subtract\">module:Calc.subtract &rtrif; undefined</a>"},{"title":"DOM","link":"<a href=\"module-DOM.html\">DOM</a>"},{"title":"module:DOM.addClass","link":"<a href=\"module-DOM.html#.addClass\">module:DOM.addClass &rtrif; undefined</a>"},{"title":"module:DOM.attr","link":"<a href=\"module-DOM.html#.attr\">module:DOM.attr &rtrif; undefined</a>"},{"title":"module:DOM.childrenEl","link":"<a href=\"module-DOM.html#.childrenEl\">module:DOM.childrenEl &rtrif; undefined</a>"},{"title":"module:DOM.cloneEl","link":"<a href=\"module-DOM.html#.cloneEl\">module:DOM.cloneEl &rtrif; undefined</a>"},{"title":"module:DOM.createEl","link":"<a href=\"module-DOM.html#.createEl\">module:DOM.createEl &rtrif; undefined</a>"},{"title":"module:DOM.createText","link":"<a href=\"module-DOM.html#.createText\">module:DOM.createText &rtrif; undefined</a>"},{"title":"module:DOM.css","link":"<a href=\"module-DOM.html#.css\">module:DOM.css &rtrif; undefined</a>"},{"title":"module:DOM.dataAttr","link":"<a href=\"module-DOM.html#.dataAttr\">module:DOM.dataAttr &rtrif; undefined</a>"},{"title":"module:DOM.each","link":"<a href=\"module-DOM.html#.each\">module:DOM.each &rtrif; undefined</a>"},{"title":"module:DOM.find","link":"<a href=\"module-DOM.html#.find\">module:DOM.find &rtrif; undefined</a>"},{"title":"module:DOM.firstChildEl","link":"<a href=\"module-DOM.html#.firstChildEl\">module:DOM.firstChildEl &rtrif; undefined</a>"},{"title":"module:DOM.getAttr","link":"<a href=\"module-DOM.html#.getAttr\">module:DOM.getAttr &rtrif; undefined</a>"},{"title":"module:DOM.getEl","link":"<a href=\"module-DOM.html#.getEl\">module:DOM.getEl &rtrif; undefined</a>"},{"title":"module:DOM.getStyle","link":"<a href=\"module-DOM.html#.getStyle\">module:DOM.getStyle &rtrif; undefined</a>"},{"title":"module:DOM.hasClass","link":"<a href=\"module-DOM.html#.hasClass\">module:DOM.hasClass &rtrif; undefined</a>"},{"title":"module:DOM.height","link":"<a href=\"module-DOM.html#.height\">module:DOM.height &rtrif; undefined</a>"},{"title":"module:DOM.html","link":"<a href=\"module-DOM.html#.html\">module:DOM.html &rtrif; undefined</a>"},{"title":"module:DOM.isCollection","link":"<a href=\"module-DOM.html#.isCollection\">module:DOM.isCollection &rtrif; undefined</a>"},{"title":"module:DOM.isEl","link":"<a href=\"module-DOM.html#.isEl\">module:DOM.isEl &rtrif; undefined</a>"},{"title":"module:DOM.isNodeList","link":"<a href=\"module-DOM.html#.isNodeList\">module:DOM.isNodeList &rtrif; undefined</a>"},{"title":"module:DOM.lastChildEl","link":"<a href=\"module-DOM.html#.lastChildEl\">module:DOM.lastChildEl &rtrif; undefined</a>"},{"title":"module:DOM.moveEl","link":"<a href=\"module-DOM.html#.moveEl\">module:DOM.moveEl &rtrif; undefined</a>"},{"title":"module:DOM.next","link":"<a href=\"module-DOM.html#.next\">module:DOM.next &rtrif; undefined</a>"},{"title":"module:DOM.offset","link":"<a href=\"module-DOM.html#.offset\">module:DOM.offset &rtrif; undefined</a>"},{"title":"module:DOM.on","link":"<a href=\"module-DOM.html#.on\">module:DOM.on &rtrif; undefined</a>"},{"title":"module:DOM.prev","link":"<a href=\"module-DOM.html#.prev\">module:DOM.prev &rtrif; undefined</a>"},{"title":"module:DOM.removeAttr","link":"<a href=\"module-DOM.html#.removeAttr\">module:DOM.removeAttr &rtrif; undefined</a>"},{"title":"module:DOM.removeChild","link":"<a href=\"module-DOM.html#.removeChild\">module:DOM.removeChild &rtrif; undefined</a>"},{"title":"module:DOM.removeClass","link":"<a href=\"module-DOM.html#.removeClass\">module:DOM.removeClass &rtrif; undefined</a>"},{"title":"module:DOM.removeEl","link":"<a href=\"module-DOM.html#.removeEl\">module:DOM.removeEl &rtrif; undefined</a>"},{"title":"module:DOM.replaceEl","link":"<a href=\"module-DOM.html#.replaceEl\">module:DOM.replaceEl &rtrif; undefined</a>"},{"title":"module:DOM.setAttr","link":"<a href=\"module-DOM.html#.setAttr\">module:DOM.setAttr &rtrif; undefined</a>"},{"title":"module:DOM.siblings","link":"<a href=\"module-DOM.html#.siblings\">module:DOM.siblings &rtrif; undefined</a>"},{"title":"module:DOM.styleEl","link":"<a href=\"module-DOM.html#.styleEl\">module:DOM.styleEl &rtrif; undefined</a>"},{"title":"module:DOM.text","link":"<a href=\"module-DOM.html#.text\">module:DOM.text &rtrif; undefined</a>"},{"title":"module:DOM.toggleClass","link":"<a href=\"module-DOM.html#.toggleClass\">module:DOM.toggleClass &rtrif; undefined</a>"},{"title":"module:DOM.ToolJSNodeList","link":"<a href=\"module-DOM.html#.ToolJSNodeList\">module:DOM.ToolJSNodeList &rtrif; undefined</a>"},{"title":"module:DOM.width","link":"<a href=\"module-DOM.html#.width\">module:DOM.width &rtrif; undefined</a>"},{"title":"module:DOM.wrap","link":"<a href=\"module-DOM.html#.wrap\">module:DOM.wrap &rtrif; undefined</a>"},{"title":"Num","link":"<a href=\"module-Num.html\">Num</a>"},{"title":"module:Num.decrement","link":"<a href=\"module-Num.html#.decrement\">module:Num.decrement &rtrif; undefined</a>"},{"title":"module:Num.increment","link":"<a href=\"module-Num.html#.increment\">module:Num.increment &rtrif; undefined</a>"},{"title":"module:Num.inRange","link":"<a href=\"module-Num.html#.inRange\">module:Num.inRange &rtrif; undefined</a>"},{"title":"module:Num.isEven","link":"<a href=\"module-Num.html#.isEven\">module:Num.isEven &rtrif; undefined</a>"},{"title":"module:Num.isNum","link":"<a href=\"module-Num.html#.isNum\">module:Num.isNum &rtrif; undefined</a>"},{"title":"module:Num.isOdd","link":"<a href=\"module-Num.html#.isOdd\">module:Num.isOdd &rtrif; undefined</a>"},{"title":"module:Num.rand","link":"<a href=\"module-Num.html#.rand\">module:Num.rand &rtrif; undefined</a>"},{"title":"module:Num.range","link":"<a href=\"module-Num.html#.range\">module:Num.range &rtrif; undefined</a>"},{"title":"module:Num.round","link":"<a href=\"module-Num.html#.round\">module:Num.round &rtrif; undefined</a>"},{"title":"Obj","link":"<a href=\"module-Obj.html\">Obj</a>"},{"title":"module:Obj.entries","link":"<a href=\"module-Obj.html#.entries\">module:Obj.entries &rtrif; undefined</a>"},{"title":"module:Obj.extend","link":"<a href=\"module-Obj.html#.extend\">module:Obj.extend &rtrif; undefined</a>"},{"title":"module:Obj.forEach","link":"<a href=\"module-Obj.html#.forEach\">module:Obj.forEach &rtrif; undefined</a>"},{"title":"module:Obj.includes","link":"<a href=\"module-Obj.html#.includes\">module:Obj.includes &rtrif; undefined</a>"},{"title":"module:Obj.indexOf","link":"<a href=\"module-Obj.html#.indexOf\">module:Obj.indexOf &rtrif; undefined</a>"},{"title":"module:Obj.isEmpty","link":"<a href=\"module-Obj.html#.isEmpty\">module:Obj.isEmpty &rtrif; undefined</a>"},{"title":"module:Obj.isObj","link":"<a href=\"module-Obj.html#.isObj\">module:Obj.isObj &rtrif; undefined</a>"},{"title":"module:Obj.isObj","link":"<a href=\"module-Obj.html#.isObj\">module:Obj.isObj &rtrif; undefined</a>"},{"title":"module:Obj.keyAt","link":"<a href=\"module-Obj.html#.keyAt\">module:Obj.keyAt &rtrif; undefined</a>"},{"title":"module:Obj.keys","link":"<a href=\"module-Obj.html#.keys\">module:Obj.keys &rtrif; undefined</a>"},{"title":"module:Obj.pop","link":"<a href=\"module-Obj.html#.pop\">module:Obj.pop &rtrif; undefined</a>"},{"title":"module:Obj.push","link":"<a href=\"module-Obj.html#.push\">module:Obj.push &rtrif; undefined</a>"},{"title":"module:Obj.remove","link":"<a href=\"module-Obj.html#.remove\">module:Obj.remove &rtrif; undefined</a>"},{"title":"module:Obj.set","link":"<a href=\"module-Obj.html#.set\">module:Obj.set &rtrif; undefined</a>"},{"title":"module:Obj.toArray","link":"<a href=\"module-Obj.html#.toArray\">module:Obj.toArray &rtrif; undefined</a>"},{"title":"module:Obj.toObj","link":"<a href=\"module-Obj.html#.toObj\">module:Obj.toObj &rtrif; undefined</a>"},{"title":"module:Obj.toPropArray","link":"<a href=\"module-Obj.html#.toPropArray\">module:Obj.toPropArray &rtrif; undefined</a>"},{"title":"module:Obj.valueAt","link":"<a href=\"module-Obj.html#.valueAt\">module:Obj.valueAt &rtrif; undefined</a>"},{"title":"module:Obj.valueOf","link":"<a href=\"module-Obj.html#.valueOf\">module:Obj.valueOf &rtrif; undefined</a>"},{"title":"module:Obj.values","link":"<a href=\"module-Obj.html#.values\">module:Obj.values &rtrif; undefined</a>"},{"title":"Str","link":"<a href=\"module-Str.html\">Str</a>"},{"title":"module:Str.between","link":"<a href=\"module-Str.html#.between\">module:Str.between &rtrif; undefined</a>"},{"title":"module:Str.camelCase","link":"<a href=\"module-Str.html#.camelCase\">module:Str.camelCase &rtrif; undefined</a>"},{"title":"module:Str.capitalize","link":"<a href=\"module-Str.html#.capitalize\">module:Str.capitalize &rtrif; undefined</a>"},{"title":"module:Str.charAt","link":"<a href=\"module-Str.html#.charAt\">module:Str.charAt &rtrif; undefined</a>"},{"title":"module:Str.chars","link":"<a href=\"module-Str.html#.chars\">module:Str.chars &rtrif; undefined</a>"},{"title":"module:Str.compare","link":"<a href=\"module-Str.html#.compare\">module:Str.compare &rtrif; undefined</a>"},{"title":"module:Str.concat","link":"<a href=\"module-Str.html#.concat\">module:Str.concat &rtrif; undefined</a>"},{"title":"module:Str.endsWith","link":"<a href=\"module-Str.html#.endsWith\">module:Str.endsWith &rtrif; undefined</a>"},{"title":"module:Str.firstChar","link":"<a href=\"module-Str.html#.firstChar\">module:Str.firstChar &rtrif; undefined</a>"},{"title":"module:Str.firstToLower","link":"<a href=\"module-Str.html#.firstToLower\">module:Str.firstToLower &rtrif; undefined</a>"},{"title":"module:Str.firstToUpper","link":"<a href=\"module-Str.html#.firstToUpper\">module:Str.firstToUpper &rtrif; undefined</a>"},{"title":"module:Str.getNums","link":"<a href=\"module-Str.html#.getNums\">module:Str.getNums &rtrif; undefined</a>"},{"title":"module:Str.hasNums","link":"<a href=\"module-Str.html#.hasNums\">module:Str.hasNums &rtrif; undefined</a>"},{"title":"module:Str.htmldecode","link":"<a href=\"module-Str.html#.htmldecode\">module:Str.htmldecode &rtrif; undefined</a>"},{"title":"module:Str.htmlencode","link":"<a href=\"module-Str.html#.htmlencode\">module:Str.htmlencode &rtrif; undefined</a>"},{"title":"module:Str.isLower","link":"<a href=\"module-Str.html#.isLower\">module:Str.isLower &rtrif; undefined</a>"},{"title":"module:Str.isString","link":"<a href=\"module-Str.html#.isString\">module:Str.isString &rtrif; undefined</a>"},{"title":"module:Str.isUpper","link":"<a href=\"module-Str.html#.isUpper\">module:Str.isUpper &rtrif; undefined</a>"},{"title":"module:Str.joinBy","link":"<a href=\"module-Str.html#.joinBy\">module:Str.joinBy &rtrif; undefined</a>"},{"title":"module:Str.lastChar","link":"<a href=\"module-Str.html#.lastChar\">module:Str.lastChar &rtrif; undefined</a>"},{"title":"module:Str.longest","link":"<a href=\"module-Str.html#.longest\">module:Str.longest &rtrif; undefined</a>"},{"title":"module:Str.lowerCase","link":"<a href=\"module-Str.html#.lowerCase\">module:Str.lowerCase &rtrif; undefined</a>"},{"title":"module:Str.pad","link":"<a href=\"module-Str.html#.pad\">module:Str.pad &rtrif; undefined</a>"},{"title":"module:Str.random","link":"<a href=\"module-Str.html#.random\">module:Str.random &rtrif; undefined</a>"},{"title":"module:Str.repeat","link":"<a href=\"module-Str.html#.repeat\">module:Str.repeat &rtrif; undefined</a>"},{"title":"module:Str.replace","link":"<a href=\"module-Str.html#.replace\">module:Str.replace &rtrif; undefined</a>"},{"title":"module:Str.reverse","link":"<a href=\"module-Str.html#.reverse\">module:Str.reverse &rtrif; undefined</a>"},{"title":"module:Str.shortest","link":"<a href=\"module-Str.html#.shortest\">module:Str.shortest &rtrif; undefined</a>"},{"title":"module:Str.shuffle","link":"<a href=\"module-Str.html#.shuffle\">module:Str.shuffle &rtrif; undefined</a>"},{"title":"module:Str.slugify","link":"<a href=\"module-Str.html#.slugify\">module:Str.slugify &rtrif; undefined</a>"},{"title":"module:Str.sort","link":"<a href=\"module-Str.html#.sort\">module:Str.sort &rtrif; undefined</a>"},{"title":"module:Str.startsWith","link":"<a href=\"module-Str.html#.startsWith\">module:Str.startsWith &rtrif; undefined</a>"},{"title":"module:Str.stripNums","link":"<a href=\"module-Str.html#.stripNums\">module:Str.stripNums &rtrif; undefined</a>"},{"title":"module:Str.stripSpecialChars","link":"<a href=\"module-Str.html#.stripSpecialChars\">module:Str.stripSpecialChars &rtrif; undefined</a>"},{"title":"module:Str.toggleCase","link":"<a href=\"module-Str.html#.toggleCase\">module:Str.toggleCase &rtrif; undefined</a>"},{"title":"module:Str.toHashTag","link":"<a href=\"module-Str.html#.toHashTag\">module:Str.toHashTag &rtrif; undefined</a>"},{"title":"module:Str.toLower","link":"<a href=\"module-Str.html#.toLower\">module:Str.toLower &rtrif; undefined</a>"},{"title":"module:Str.toString","link":"<a href=\"module-Str.html#.toString\">module:Str.toString &rtrif; undefined</a>"},{"title":"module:Str.toUpper","link":"<a href=\"module-Str.html#.toUpper\">module:Str.toUpper &rtrif; undefined</a>"},{"title":"module:Str.trim","link":"<a href=\"module-Str.html#.trim\">module:Str.trim &rtrif; undefined</a>"},{"title":"module:Str.truncate","link":"<a href=\"module-Str.html#.truncate\">module:Str.truncate &rtrif; undefined</a>"},{"title":"module:Str.upperCase","link":"<a href=\"module-Str.html#.upperCase\">module:Str.upperCase &rtrif; undefined</a>"},{"title":"module:Str.wordChunk","link":"<a href=\"module-Str.html#.wordChunk\">module:Str.wordChunk &rtrif; undefined</a>"},{"title":"module:Str.wordCount","link":"<a href=\"module-Str.html#.wordCount\">module:Str.wordCount &rtrif; undefined</a>"},{"title":"module:Str.words","link":"<a href=\"module-Str.html#.words\">module:Str.words &rtrif; undefined</a>"},{"title":"module:Str.wordsExclude","link":"<a href=\"module-Str.html#.wordsExclude\">module:Str.wordsExclude &rtrif; undefined</a>"},{"title":"Utils","link":"<a href=\"module-Utils.html\">Utils</a>"},{"title":"module:Utils.checkCookie","link":"<a href=\"module-Utils.html#.checkCookie\">module:Utils.checkCookie &rtrif; undefined</a>"},{"title":"module:Utils.deleteCookie","link":"<a href=\"module-Utils.html#.deleteCookie\">module:Utils.deleteCookie &rtrif; undefined</a>"},{"title":"module:Utils.getCookie","link":"<a href=\"module-Utils.html#.getCookie\">module:Utils.getCookie &rtrif; undefined</a>"},{"title":"module:Utils.importScript","link":"<a href=\"module-Utils.html#.importScript\">module:Utils.importScript &rtrif; undefined</a>"},{"title":"module:Utils.observeMutation","link":"<a href=\"module-Utils.html#.observeMutation\">module:Utils.observeMutation &rtrif; undefined</a>"},{"title":"module:Utils.setCookie","link":"<a href=\"module-Utils.html#.setCookie\">module:Utils.setCookie &rtrif; undefined</a>"},{"title":"module:Utils.typeOf","link":"<a href=\"module-Utils.html#.typeOf\">module:Utils.typeOf &rtrif; undefined</a>"}];
+  var options = true
+  setupSearch(list, options)
+</script>
+
+ 
+
+
+
+
+  <script type="text/javascript">
+    var option = JSON.parse('{"options":{}}')
+    console.log(option)
+    document.addEventListener("DOMContentLoaded", function() {
+    OverlayScrollbars(document.querySelectorAll('body'), option.option || {});
+  });
+  </script>
+
+
+
+</body>
+</html>

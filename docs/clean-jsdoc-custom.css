@@ -1,0 +1,240 @@
+body.clean-jsdoc-custom {
+  line-height: 25px;
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom .custom-theme-btn {
+  position: relative;
+  padding: 1em;
+}
+
+body.clean-jsdoc-custom .custom-theme-btn li {
+  position: relative;
+  display: inline-block;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+body.clean-jsdoc-custom .custom-theme-btn li:first-of-type {
+  margin-left: 0;
+}
+
+body.clean-jsdoc-custom .custom-theme-btn a {
+  position: relative;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7px 15px;
+  color: #262626;
+  font-weight: bold;
+  text-decoration: none;
+  background: #ececec;
+  border: 1px solid #ddd;
+}
+
+body.clean-jsdoc-custom .prettyprint {
+  background: #282C34;
+}
+
+body.clean-jsdoc-custom .prettyprint * {
+  font-family: consolas;
+}
+
+body.clean-jsdoc-custom .prettyprint code {
+  background-color: #282C34;
+  padding: 1em;
+}
+
+body.clean-jsdoc-custom .prettyprint .pre-top-bar-container {
+  background: #282C34;
+}
+
+body.clean-jsdoc-custom .prettyprint.linenums > div {
+  padding-left: 2em;
+}
+
+body.clean-jsdoc-custom .prettyprint div {
+  max-height: unset !important;
+}
+
+body.clean-jsdoc-custom a,
+body.clean-jsdoc-custom a:active {
+  color: #333842;
+}
+
+body.clean-jsdoc-custom .tooltip * {
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom .code-copy-icon-container {
+  fill: #f7f7f7;
+}
+
+body.clean-jsdoc-custom .code-copy-icon-container .sm-icon {
+  height: 1em;
+  width: 1em;
+}
+
+body.clean-jsdoc-custom .code-copy-icon-container:hover {
+  fill: #282C34;
+  background-color: #ffce76;
+}
+
+body.clean-jsdoc-custom table, body.clean-jsdoc-custom .params, body.clean-jsdoc-custom .props {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body.clean-jsdoc-custom table thead tr, body.clean-jsdoc-custom .params thead tr, body.clean-jsdoc-custom .props thead tr {
+  background-color: #f2f2f2;
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom table tbody tr, body.clean-jsdoc-custom .params tbody tr, body.clean-jsdoc-custom .props tbody tr {
+  background-color: #fcfcfc;
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom table td, body.clean-jsdoc-custom table th, body.clean-jsdoc-custom .params td, body.clean-jsdoc-custom .params th, body.clean-jsdoc-custom .props td, body.clean-jsdoc-custom .props th {
+  padding: 10px;
+}
+
+body.clean-jsdoc-custom table .type, body.clean-jsdoc-custom .params .type, body.clean-jsdoc-custom .props .type {
+  word-break: break-all;
+}
+
+body.clean-jsdoc-custom table .param-type, body.clean-jsdoc-custom .params .param-type, body.clean-jsdoc-custom .props .param-type {
+  background-color: #9dd7f0;
+  text-transform: capitalize;
+  color: #282C34;
+  padding: 2px 5px;
+  font-size: .8em;
+  border-radius: 5px;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+body.clean-jsdoc-custom table code, body.clean-jsdoc-custom .params code, body.clean-jsdoc-custom .props code {
+  font-weight: bold;
+  background-color: #f2f2f2;
+}
+
+body.clean-jsdoc-custom nav {
+  background: #282C34;
+}
+
+body.clean-jsdoc-custom nav > h2 > a {
+  font-size: 20px;
+}
+
+body.clean-jsdoc-custom nav .search-box input {
+  height: 40px;
+  color: #f7f7f7;
+  outline: none;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+body.clean-jsdoc-custom h1.page-title::after,
+body.clean-jsdoc-custom article h1::after {
+  background: #f7f7f7;
+}
+
+body.clean-jsdoc-custom h1.page-title {
+  font-size: 2em;
+  padding: 0;
+  margin: 20px;
+}
+
+body.clean-jsdoc-custom h1,
+body.clean-jsdoc-custom h2,
+body.clean-jsdoc-custom h3,
+body.clean-jsdoc-custom h4,
+body.clean-jsdoc-custom h5,
+body.clean-jsdoc-custom h6 {
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom code {
+  padding: 2px 5px;
+}
+
+body.clean-jsdoc-custom blockquote,
+body.clean-jsdoc-custom .details {
+  font-size: .89em;
+  padding: 5px;
+  border-left: 5px solid #282C34;
+  color: #282C34;
+}
+
+body.clean-jsdoc-custom blockquote {
+  font-size: .8em;
+  font-style: italic;
+  font-weight: bold;
+  background: #f7f7f7;
+  border-color: #ec7e3e;
+  color: #ec7e3e;
+  padding: 5px 15px;
+}
+
+body.clean-jsdoc-custom .signature {
+  color: #F47378;
+}
+
+body.clean-jsdoc-custom .signature .signature-attributes {
+  font-size: 70%;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul {
+  padding: 0 20px;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul .group-title {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px 10px;
+  color: white;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul .group-title .show-content {
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul .group-title a,
+body.clean-jsdoc-custom .sidebar-list-div > ul .group-title a:active {
+  padding-left: 0;
+  color: inherit;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul ul {
+  position: relative;
+  margin-left: 10px;
+  border-left: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul ul li {
+  padding: 5px 0;
+  background: #262a31;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul ul li a {
+  padding-left: 15px;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul ul li a:hover {
+  text-decoration: none;
+}
+
+body.clean-jsdoc-custom .sidebar-list-div > ul ul li:hover {
+  background: rgba(0, 0, 0, 0.15);
+}

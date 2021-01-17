@@ -1,0 +1,9994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Adding meta -->
+    
+      
+        <meta name="author" content="Okoro Redemption" />
+      
+        <meta name="description" content="ToolJS Utility Library Documentation" />
+      
+    
+
+    <!-- Adding external script-->
+    
+      
+        <script src="./assets/vendor/jquery.min.js" ></script>
+      
+    
+
+    <!-- Adding external style-->
+    
+      
+    
+
+    <!-- Adding scripts-->
+    
+      
+        <script src="clean-jsdoc-custom.js"></script>
+      
+    
+
+    <!-- Adding style-->
+    
+      
+        <link type="text/css" rel="stylesheet" href="clean-jsdoc-custom.css">
+      
+    
+
+    <!-- Adding overlay script-->
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/js/OverlayScrollbars.min.js" integrity="sha512-5R3ngaUdvyhXkQkIqTf/k+Noq3phjmrqlUQyQYbgfI34Mzcx7vLIIYTy/K1VMHkL33T709kfh5y6R9Xy/Cbt7Q==" crossorigin="anonymous"></script>
+    
+
+    <!-- Adding overlay style-->
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.13.0/css/OverlayScrollbars.min.css" integrity="sha512-pYQcc5kgavar0ah58/O8hw/6Tbo3mWlmQTmvoi1i96cBz7jQYS9as5J+Nfy32rAHY6CgR9ExwnFMcBdGVcKM7g==" crossorigin="anonymous" />
+    
+
+
+    <title>Str</title>
+
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/third-party/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/third-party/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-base.css">
+    <link type="text/css" rel="stylesheet" href="styles/clean-jsdoc-theme-light.css">
+    
+<svg aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none">
+    <defs>
+        <symbol id="copy-icon" viewbox="0 0 488.3 488.3">
+            <g>
+                <path d="M314.25,85.4h-227c-21.3,0-38.6,17.3-38.6,38.6v325.7c0,21.3,17.3,38.6,38.6,38.6h227c21.3,0,38.6-17.3,38.6-38.6V124    C352.75,102.7,335.45,85.4,314.25,85.4z M325.75,449.6c0,6.4-5.2,11.6-11.6,11.6h-227c-6.4,0-11.6-5.2-11.6-11.6V124    c0-6.4,5.2-11.6,11.6-11.6h227c6.4,0,11.6,5.2,11.6,11.6V449.6z"/>
+                <path d="M401.05,0h-227c-21.3,0-38.6,17.3-38.6,38.6c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5c0-6.4,5.2-11.6,11.6-11.6h227    c6.4,0,11.6,5.2,11.6,11.6v325.7c0,6.4-5.2,11.6-11.6,11.6c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5c21.3,0,38.6-17.3,38.6-38.6    V38.6C439.65,17.3,422.35,0,401.05,0z"/>
+            </g>
+        </symbol>
+    </defs>
+</svg>
+
+</head>
+<body>
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html"><div class="text">ToolJS Docs</div></a></h2><div class="search-box"><input type="text" placeholder="Search..." id="search-box" /><div class="search-item-container" id="search-item-container"><ul class="search-item-ul" id="search-item-ul"></ul></div></div><div class="sidebar-list-div"><ul><li><a href='./index.html' class='' id='' target=''>Home</a></li><li><a href='https://github.com/redeakaa/tooljs' class='' id='' target=''>Github</a></li><li><a href='' class='' id='' target=''>Plugins</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-create-plugin.html">Create a Plugin</a></li><li><a href="tutorial-dom-tuts.html">DOM Module Tutorials</a></li><li><a href="tutorial-getting-started.html">Getting Started</a></li></ul><h3>Classes</h3><ul><li><a href="ToolJS.html">ToolJS</a></li></ul><h3>Modules</h3><ul><li><a href="module-Calc.html">Calc</a><ul class='methods'><li data-type='method'><a href="module-Calc.html#.add">add</a></li><li data-type='method'><a href="module-Calc.html#.divide">divide</a></li><li data-type='method'><a href="module-Calc.html#.evaluate">evaluate</a></li><li data-type='method'><a href="module-Calc.html#.exponential">exponential</a></li><li data-type='method'><a href="module-Calc.html#.max">max</a></li><li data-type='method'><a href="module-Calc.html#.mean">mean</a></li><li data-type='method'><a href="module-Calc.html#.median">median</a></li><li data-type='method'><a href="module-Calc.html#.min">min</a></li><li data-type='method'><a href="module-Calc.html#.mode">mode</a></li><li data-type='method'><a href="module-Calc.html#.modulo">modulo</a></li><li data-type='method'><a href="module-Calc.html#.multiply">multiply</a></li><li data-type='method'><a href="module-Calc.html#.pow">pow</a></li><li data-type='method'><a href="module-Calc.html#.subtract">subtract</a></li></ul></li><li><a href="module-DOM.html">DOM</a><ul class='methods'><li data-type='method'><a href="module-DOM.html#.addClass">addClass</a></li><li data-type='method'><a href="module-DOM.html#.attr">attr</a></li><li data-type='method'><a href="module-DOM.html#.childrenEl">childrenEl</a></li><li data-type='method'><a href="module-DOM.html#.cloneEl">cloneEl</a></li><li data-type='method'><a href="module-DOM.html#.createEl">createEl</a></li><li data-type='method'><a href="module-DOM.html#.createText">createText</a></li><li data-type='method'><a href="module-DOM.html#.css">css</a></li><li data-type='method'><a href="module-DOM.html#.dataAttr">dataAttr</a></li><li data-type='method'><a href="module-DOM.html#.each">each</a></li><li data-type='method'><a href="module-DOM.html#.find">find</a></li><li data-type='method'><a href="module-DOM.html#.firstChildEl">firstChildEl</a></li><li data-type='method'><a href="module-DOM.html#.getAttr">getAttr</a></li><li data-type='method'><a href="module-DOM.html#.getEl">getEl</a></li><li data-type='method'><a href="module-DOM.html#.getStyle">getStyle</a></li><li data-type='method'><a href="module-DOM.html#.hasClass">hasClass</a></li><li data-type='method'><a href="module-DOM.html#.height">height</a></li><li data-type='method'><a href="module-DOM.html#.html">html</a></li><li data-type='method'><a href="module-DOM.html#.isCollection">isCollection</a></li><li data-type='method'><a href="module-DOM.html#.isEl">isEl</a></li><li data-type='method'><a href="module-DOM.html#.isNodeList">isNodeList</a></li><li data-type='method'><a href="module-DOM.html#.lastChildEl">lastChildEl</a></li><li data-type='method'><a href="module-DOM.html#.moveEl">moveEl</a></li><li data-type='method'><a href="module-DOM.html#.next">next</a></li><li data-type='method'><a href="module-DOM.html#.offset">offset</a></li><li data-type='method'><a href="module-DOM.html#.on">on</a></li><li data-type='method'><a href="module-DOM.html#.prev">prev</a></li><li data-type='method'><a href="module-DOM.html#.removeAttr">removeAttr</a></li><li data-type='method'><a href="module-DOM.html#.removeChild">removeChild</a></li><li data-type='method'><a href="module-DOM.html#.removeClass">removeClass</a></li><li data-type='method'><a href="module-DOM.html#.removeEl">removeEl</a></li><li data-type='method'><a href="module-DOM.html#.replaceEl">replaceEl</a></li><li data-type='method'><a href="module-DOM.html#.setAttr">setAttr</a></li><li data-type='method'><a href="module-DOM.html#.siblings">siblings</a></li><li data-type='method'><a href="module-DOM.html#.styleEl">styleEl</a></li><li data-type='method'><a href="module-DOM.html#.text">text</a></li><li data-type='method'><a href="module-DOM.html#.toggleClass">toggleClass</a></li><li data-type='method'><a href="module-DOM.html#.ToolJSNodeList">ToolJSNodeList</a></li><li data-type='method'><a href="module-DOM.html#.width">width</a></li><li data-type='method'><a href="module-DOM.html#.wrap">wrap</a></li></ul></li><li><a href="module-Num.html">Num</a><ul class='methods'><li data-type='method'><a href="module-Num.html#.decrement">decrement</a></li><li data-type='method'><a href="module-Num.html#.increment">increment</a></li><li data-type='method'><a href="module-Num.html#.inRange">inRange</a></li><li data-type='method'><a href="module-Num.html#.isEven">isEven</a></li><li data-type='method'><a href="module-Num.html#.isNum">isNum</a></li><li data-type='method'><a href="module-Num.html#.isOdd">isOdd</a></li><li data-type='method'><a href="module-Num.html#.rand">rand</a></li><li data-type='method'><a href="module-Num.html#.range">range</a></li><li data-type='method'><a href="module-Num.html#.round">round</a></li></ul></li><li><a href="module-Obj.html">Obj</a><ul class='methods'><li data-type='method'><a href="module-Obj.html#.entries">entries</a></li><li data-type='method'><a href="module-Obj.html#.extend">extend</a></li><li data-type='method'><a href="module-Obj.html#.forEach">forEach</a></li><li data-type='method'><a href="module-Obj.html#.includes">includes</a></li><li data-type='method'><a href="module-Obj.html#.indexOf">indexOf</a></li><li data-type='method'><a href="module-Obj.html#.isEmpty">isEmpty</a></li><li data-type='method'><a href="module-Obj.html#.isObj">isObj</a></li><li data-type='method'><a href="module-Obj.html#.isObj">isObj</a></li><li data-type='method'><a href="module-Obj.html#.keyAt">keyAt</a></li><li data-type='method'><a href="module-Obj.html#.keys">keys</a></li><li data-type='method'><a href="module-Obj.html#.pop">pop</a></li><li data-type='method'><a href="module-Obj.html#.push">push</a></li><li data-type='method'><a href="module-Obj.html#.remove">remove</a></li><li data-type='method'><a href="module-Obj.html#.set">set</a></li><li data-type='method'><a href="module-Obj.html#.toArray">toArray</a></li><li data-type='method'><a href="module-Obj.html#.toObj">toObj</a></li><li data-type='method'><a href="module-Obj.html#.toPropArray">toPropArray</a></li><li data-type='method'><a href="module-Obj.html#.valueAt">valueAt</a></li><li data-type='method'><a href="module-Obj.html#.valueOf">valueOf</a></li><li data-type='method'><a href="module-Obj.html#.values">values</a></li></ul></li><li><a href="module-Str.html">Str</a><ul class='methods'><li data-type='method'><a href="module-Str.html#.between">between</a></li><li data-type='method'><a href="module-Str.html#.camelCase">camelCase</a></li><li data-type='method'><a href="module-Str.html#.capitalize">capitalize</a></li><li data-type='method'><a href="module-Str.html#.charAt">charAt</a></li><li data-type='method'><a href="module-Str.html#.chars">chars</a></li><li data-type='method'><a href="module-Str.html#.compare">compare</a></li><li data-type='method'><a href="module-Str.html#.concat">concat</a></li><li data-type='method'><a href="module-Str.html#.endsWith">endsWith</a></li><li data-type='method'><a href="module-Str.html#.firstChar">firstChar</a></li><li data-type='method'><a href="module-Str.html#.firstToLower">firstToLower</a></li><li data-type='method'><a href="module-Str.html#.firstToUpper">firstToUpper</a></li><li data-type='method'><a href="module-Str.html#.getNums">getNums</a></li><li data-type='method'><a href="module-Str.html#.hasNums">hasNums</a></li><li data-type='method'><a href="module-Str.html#.htmldecode">htmldecode</a></li><li data-type='method'><a href="module-Str.html#.htmlencode">htmlencode</a></li><li data-type='method'><a href="module-Str.html#.isLower">isLower</a></li><li data-type='method'><a href="module-Str.html#.isString">isString</a></li><li data-type='method'><a href="module-Str.html#.isUpper">isUpper</a></li><li data-type='method'><a href="module-Str.html#.joinBy">joinBy</a></li><li data-type='method'><a href="module-Str.html#.lastChar">lastChar</a></li><li data-type='method'><a href="module-Str.html#.longest">longest</a></li><li data-type='method'><a href="module-Str.html#.lowerCase">lowerCase</a></li><li data-type='method'><a href="module-Str.html#.pad">pad</a></li><li data-type='method'><a href="module-Str.html#.random">random</a></li><li data-type='method'><a href="module-Str.html#.repeat">repeat</a></li><li data-type='method'><a href="module-Str.html#.replace">replace</a></li><li data-type='method'><a href="module-Str.html#.reverse">reverse</a></li><li data-type='method'><a href="module-Str.html#.shortest">shortest</a></li><li data-type='method'><a href="module-Str.html#.shuffle">shuffle</a></li><li data-type='method'><a href="module-Str.html#.slugify">slugify</a></li><li data-type='method'><a href="module-Str.html#.sort">sort</a></li><li data-type='method'><a href="module-Str.html#.startsWith">startsWith</a></li><li data-type='method'><a href="module-Str.html#.stripNums">stripNums</a></li><li data-type='method'><a href="module-Str.html#.stripSpecialChars">stripSpecialChars</a></li><li data-type='method'><a href="module-Str.html#.toggleCase">toggleCase</a></li><li data-type='method'><a href="module-Str.html#.toHashTag">toHashTag</a></li><li data-type='method'><a href="module-Str.html#.toLower">toLower</a></li><li data-type='method'><a href="module-Str.html#.toString">toString</a></li><li data-type='method'><a href="module-Str.html#.toUpper">toUpper</a></li><li data-type='method'><a href="module-Str.html#.trim">trim</a></li><li data-type='method'><a href="module-Str.html#.truncate">truncate</a></li><li data-type='method'><a href="module-Str.html#.upperCase">upperCase</a></li><li data-type='method'><a href="module-Str.html#.wordChunk">wordChunk</a></li><li data-type='method'><a href="module-Str.html#.wordCount">wordCount</a></li><li data-type='method'><a href="module-Str.html#.words">words</a></li><li data-type='method'><a href="module-Str.html#.wordsExclude">wordsExclude</a></li></ul></li><li><a href="module-Utils.html">Utils</a><ul class='methods'><li data-type='method'><a href="module-Utils.html#.checkCookie">checkCookie</a></li><li data-type='method'><a href="module-Utils.html#.deleteCookie">deleteCookie</a></li><li data-type='method'><a href="module-Utils.html#.getCookie">getCookie</a></li><li data-type='method'><a href="module-Utils.html#.importScript">importScript</a></li><li data-type='method'><a href="module-Utils.html#.observeMutation">observeMutation</a></li><li data-type='method'><a href="module-Utils.html#.setCookie">setCookie</a></li><li data-type='method'><a href="module-Utils.html#.typeOf">typeOf</a></li></ul></li></ul></div>
+</nav>
+
+<div id="main">
+    
+    <h1 id='page-title' class="page-title">Str</h1>
+    
+
+    
+
+
+
+
+<section>
+
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>This module contains methods and functions that manipulates a string,<br>
+most of which are extensions of JavaScript's inbuilt methods</p></div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-since">Since:</dt>
+            <dd class="tag-since"><ul class="dummy"><li>v1.0.0</li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2640">line 2640</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".between">
+        <a href="#.between">#</a>
+        <span class="type-signature">(static) </span>between<span class="signature">(str, start, end)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the characters and words between two given string, if found.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to make the search on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The starting string, i.e the beginning of the range.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The end string, i.e the ending of the range.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2611">line 2611</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the search</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "The string in the { curly brackets will } be returned";Str.between(myString, "{", "}"); // returns " curly brackets will ";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".camelCase">
+        <a href="#.camelCase">#</a>
+        <span class="type-signature">(static) </span>camelCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns a camel cased version of a given string</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose camel case version is to be returned</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1429">line 1429</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The camel cased string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.camelCase(myString); // returns "tooljsRocks";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".capitalize">
+        <a href="#.capitalize">#</a>
+        <span class="type-signature">(static) </span>capitalize<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method capitalizez a given string. It converts the first character of each word to uppercase.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be capitalized.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1466">line 1466</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The capitalized string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "toolJS is awesome and it rocks";Str.capitalize(myString); // returns "ToolJS Is Awesome And It Rocks";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".charAt">
+        <a href="#.charAt">#</a>
+        <span class="type-signature">(static) </span>charAt<span class="signature">(str, index)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the character at the specified index, and returns and empty string if the index does not exist</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to make the search on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>index</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An integer representing the index of the character to be returned</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1321">line 1321</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The character at the specified index</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.charAt(myString, 7); // returns "R";Str.charAt(myString, 13); // returns ""</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".chars">
+        <a href="#.chars">#</a>
+        <span class="type-signature">(static) </span>chars<span class="signature">(str)</span><span class="type-signature"> &rarr; {Array}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns an array containing every single character in a string, excluding whitespaces.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose characters are to be returned.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2498">line 2498</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The array of characters.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS";Str.chars(myString); // returns ["T", "o", "o", "l", "J", "S"];</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".compare">
+        <a href="#.compare">#</a>
+        <span class="type-signature">(static) </span>compare<span class="signature">(string1, string2)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method compares two(2) strings to see if they are the same and returns the result of the comparison.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>string1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The first string for comparison.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>string2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The second string for comparison.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2376">line 2376</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the comparison</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var string1 = "ToolJS Rocks"var string2 = "ToolJS Rocks";var string3 = "tooljs Rocks";Str.compare(string1, string2); // returns trueStr.compare(string1, string3); // returns false</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".concat">
+        <a href="#.concat">#</a>
+        <span class="type-signature">(static) </span>concat<span class="signature">(strings)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method concatenates two(2) or more strings and returns a new string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>strings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The strings to be concatenated together. Could be an array of strings</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2032">line 2032</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The new string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var string1 = "John Doe ";var string2 = "and i am 20yrs old.";Str.concat(["My ", "Name ", "is "], string1, string2, "I ", ["am", " a programmer"]);// returns "My Name is John Doe and i am 20yrs old. I am a programmer"Str.concat(string1, string2);// returns "John Doe and i am 20yrs old."Str.concat([string1, string2]);// returns "John Doe and i am 20yrs old."</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".endsWith">
+        <a href="#.endsWith">#</a>
+        <span class="type-signature">(static) </span>endsWith<span class="signature">(str, target, endpos<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks to see if a given string ends with a particular substring. This is a case-sensitive method</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string reference to make the search on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The target string to check for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>endpos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    str.length
+                
+                </td>
+            
+
+            <td class="description last"><p>The position to which the search is ended in the reference string length. Default(str.length)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1671">line 1671</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the test</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.endsWith(myString, "Rocks"); // returns trueStr.endsWith(myString, "R", 8); // returns true</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".firstChar">
+        <a href="#.firstChar">#</a>
+        <span class="type-signature">(static) </span>firstChar<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the first character of a given string</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to make the search on.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1341">line 1341</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The resultant character</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.firstChar(myString); // returns "T";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".firstToLower">
+        <a href="#.firstToLower">#</a>
+        <span class="type-signature">(static) </span>firstToLower<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns a given string with its first character converted to lowercase.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose first character is to be converted</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1403">line 1403</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS";var myString2 = "ToolJS is Awesome";Str.firstToLower(myString); // returns "toolJS";Str.firstToLower(myString2, 13); // returns "toolJS is Awesome"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".firstToUpper">
+        <a href="#.firstToUpper">#</a>
+        <span class="type-signature">(static) </span>firstToUpper<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns a given string with its first character converted to uppercase.<br>
+To convert the first character of each word in a string use the <a href="module-Str.html#.capitalize"><code>.capitalize()</code></a> method</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose first character is to be converted</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1376">line 1376</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "toolJS";var myString2 = "toolJS is awesome";Str.firstToUpper(myString); // returns "ToolJS";Str.firstToUpper(myString2, 13); // returns "ToolJS is awesome"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getNums">
+        <a href="#.getNums">#</a>
+        <span class="type-signature">(static) </span>getNums<span class="signature">(str)</span><span class="type-signature"> &rarr; {Array.&lt;Number>}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method extracts the numbers from a string and returns an array holding the numbers. If no number is found in the string, then it returns null</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to strip of its numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2431">line 2431</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>An array of numbers.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Number></span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "Apple, 1Apple, Banana, 2Banana, 1, 2, 3 20 100";Str.getNums(myString); // returns [1, 2, 1, 2, 3, 20, 100];</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".hasNums">
+        <a href="#.hasNums">#</a>
+        <span class="type-signature">(static) </span>hasNums<span class="signature">(str)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks to see if a string contains numbers in it.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2395">line 2395</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the check</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "My name is John Doe, and i am 20years old.";var myString2 = "My name is John Doe";Str.hasNums(myString); // returns true;Str.hasNums(myString2); // returns false;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".htmldecode">
+        <a href="#.htmldecode">#</a>
+        <span class="type-signature">(static) </span>htmldecode<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method replaces the htmlentities characters in a string with their normal characters and returns it.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be decoded</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2583">line 2583</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The decoded string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Str.htmldecode("10 is &amp;gt; 5 &amp;amp; 5 &amp;lt; 10"); // returns "10 is > 5 &amp; 5 &lt; 10";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".htmlencode">
+        <a href="#.htmlencode">#</a>
+        <span class="type-signature">(static) </span>htmlencode<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method replaces characters like &quot;&amp;&quot;, &quot;&lt;&quot;, &quot;&gt;&quot;, '&quot;', and &quot;'&quot; with their htmlentities characters in a string with their normal characters and returns it.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be escaped</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2555">line 2555</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The escaped string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Str.escape("10 is > 5 &amp; 5 &lt; 10"); // returns "10 is &amp;gt; 5 &amp;amp; 5 &amp;lt; 10"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isLower">
+        <a href="#.isLower">#</a>
+        <span class="type-signature">(static) </span>isLower<span class="signature">(str)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks to see if a string is in lowercase or not.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1855">line 1855</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the check</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "i am NOT in LowercCAse";Str.isLower(myString); // returns false;Str.isLower("i am in lowercase"); // returns true;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isString">
+        <a href="#.isString">#</a>
+        <span class="type-signature">(static) </span>isString<span class="signature">(item)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks if an item or variable is a string or an instance of the string itemect</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>item</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">*</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The item or variable to be checked.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1137">line 1137</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the check</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var numberItem = 50var stringItem = "ToolJS Rocks";Str.isString(numberItem); // returns falseStr.isString(stringItem); // returns true</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".isUpper">
+        <a href="#.isUpper">#</a>
+        <span class="type-signature">(static) </span>isUpper<span class="signature">(str)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks to see if a string is in uppercase or not.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be checked</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1836">line 1836</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the check</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "i am NOT in uPPercCAse";Str.isUpper(myString); // returns false;Str.isUpper("I AM IN UPPERCASE"); // returns true;</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".joinBy">
+        <a href="#.joinBy">#</a>
+        <span class="type-signature">(static) </span>joinBy<span class="signature">(delimeter, strings, strings<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method joins two(2) or more strings together using a given delimeter.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>delimeter</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The character to join the strings together with.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The strings to join. Could be an array of strings.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>More strings to join.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2064">line 2064</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The new string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var string1 = "John Doe";var string2 = "and i am 20yrs old.";Str.joinBy("_", ["My", "Name", "is"], string1, string2);// returns "My_Name_is_John Doe_and i am 20yrs old"Str.joinBy(" | ", "String", "Number", "Array", "Boolean");// returns "Strings | Number | Arrary | Boolean"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lastChar">
+        <a href="#.lastChar">#</a>
+        <span class="type-signature">(static) </span>lastChar<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the last character of a given string</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to make the search on.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1358">line 1358</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The resultant character</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.lastChar(myString); // returns "s";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".longest">
+        <a href="#.longest">#</a>
+        <span class="type-signature">(static) </span>longest<span class="signature">(str, length<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String|Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the longest word in a given string</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string whose longest word is to be returned.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>length</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>This tells the method to return the length of the longest word instead of the word itself.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2266">line 2266</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The longest word or the length of the longest word.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS is not the longest word is this string.";Str.longest(myString); // returns "longest"Str.longest(myString, true); // returns 7</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".lowerCase">
+        <a href="#.lowerCase">#</a>
+        <span class="type-signature">(static) </span>lowerCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a string to lowercase, separating each word by a space.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be to converted lowecase</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1526">line 1526</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "toolJS_is_an-awesome-library, try it out";Str.lowerCase(myString); // returns "tooljs is an awesome library, try it out";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".pad">
+        <a href="#.pad">#</a>
+        <span class="type-signature">(static) </span>pad<span class="signature">(str, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method inserts a given character at both ends of a string. It can optional add the character at one end of the string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The string to be padded.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An option object to specifying the padding characters per direction.<br>
+If passed a string then its used for both the left and right padding.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>left</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Specifies the character for the left padding.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>right</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>Specifies the character for the right padding.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2516">line 2516</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The padded string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.pad(myString, "__"); // returns "__ToolJS Rocks__";Str.pad(myString, {     left: "**",     right: "##"}); // returns "**ToolJS Rocks##";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".random">
+        <a href="#.random">#</a>
+        <span class="type-signature">(static) </span>random<span class="signature">(options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method generates a random string in accordance to a set of options, and returns the string. Note that the min and max numbers are inclusive when generating integers.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An object that controls how the random string is generated.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>alphanumeric</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Tells the method to generate an alphanumeric string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>string</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>Tells the method to generate only strings.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>integer</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Tells the method to generate only integers.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>characters</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>A string or characters to be used when generating string or alphanumeric randoms.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>casing</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "lowecase"
+                
+                </td>
+            
+
+            <td class="description last"><p>Specifies the casing of the generated string. Either &quot;lowercase&quot; or &quot;uppercase&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>length</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    10
+                
+                </td>
+            
+
+            <td class="description last"><p>Specifies the length of the generated string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>min</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>The min value of the range. This is only used when integer is set to true.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>max</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    100
+                
+                </td>
+            
+
+            <td class="description last"><p>The max value of the range. This is only used when integer is set to true.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>round</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    true
+                
+                </td>
+            
+
+            <td class="description last"><p>This determines if the value returned should be rounded.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>decimals</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    3
+                
+                </td>
+            
+
+            <td class="description last"><p>If the round option is set to false, then this sets the number of decimal places to round to.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1937">line 1937</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The random string generated.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var value = Str.random(); // returns a random stringvar value = Str.random({     casing: "uppercase",     length: 5,     alphanumeric: true,}); // returns a random alphanumeric string 5 characters long in uppercase</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".repeat">
+        <a href="#.repeat">#</a>
+        <span class="type-signature">(static) </span>repeat<span class="signature">(str, count<span class="signature-attributes">opt</span>, substr<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns a string repeated n number of times</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be repeated.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    1
+                
+                </td>
+            
+
+            <td class="description last"><p>The number of times the original string value should be repeated in the new string. This is optional</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>substr</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>An optional parameter to specify a particular substring to be repeated in the main string. Could be an array of strings</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1633">line 1633</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>A new string containing copies of the original string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS";var myString2 = "This is the first sentence";Str.repeat(myString); // returns "ToolJSToolJS";Str.repeat(myString2, 3, "the"); // returns "This is thethethe first sentence";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".replace">
+        <a href="#.replace">#</a>
+        <span class="type-signature">(static) </span>replace<span class="signature">(str, pattern, replacement)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method scans through a reference string for matches to a specified string, replaces them with a new string and returns a new string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The reference string to scanned and modified</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>pattern</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Regexp</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be replaced. Could be a single string, an array of strings or just a regexp.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>replacement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The replacement string to be used.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1719">line 1719</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>A new string with the replacements.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is the first sentence";Str.replace(myString, "first", "second"); // returns "This is the second sentence"Str.replace(myString, /th/ig, "blabla"); // returns "blablais is blabla second sentence"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".reverse">
+        <a href="#.reverse">#</a>
+        <span class="type-signature">(static) </span>reverse<span class="signature">(str, alt<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method reverses a string by its characters and returns it.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be reversed</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>alt</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>This determines if the reverse should be done by words and not characters.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2211">line 2211</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The reversed string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "I will be reversed";Str.reverse(myString); // returns "desrever eb lliw I";Str.reverse(myString, true); // returns "reversed be will I";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".shortest">
+        <a href="#.shortest">#</a>
+        <span class="type-signature">(static) </span>shortest<span class="signature">(str, length<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String|Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns the shortest word in a given string</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string whose shortest word is to be returned.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>length</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>This tells the method to return the length of the shortest word instead of the word itself.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2299">line 2299</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The shortest word or the length of the shortest word.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS is not the shortest word is this string.";Str.shortest(myString); // returns "is"Str.shortest(myString, true); // returns 2</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".shuffle">
+        <a href="#.shuffle">#</a>
+        <span class="type-signature">(static) </span>shuffle<span class="signature">(str, alt<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method shuffles the words of a string and returns a new string. It can alternatively shuffle the characters of the string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be shuffled</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>alt</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Tells the method to carry out the shuffle on characters of the string and not words.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2242">line 2242</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The shuffled string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "I will be shuffled";Str.shuffle(myString); // returns "desrever eb lliw I";Str.shuffle(myString, true); // returns "shuffled be will I";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".slugify">
+        <a href="#.slugify">#</a>
+        <span class="type-signature">(static) </span>slugify<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns a slugified string from a reference string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be slugified</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1495">line 1495</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The slugified string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks, you should think of using it too";Str.slugify(myString); // returns "toolJS-rocks-you-should-think-of-using-it-too";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".sort">
+        <a href="#.sort">#</a>
+        <span class="type-signature">(static) </span>sort<span class="signature">(str, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method sorts a given string using a set of default options(which can be overwritten), and returns the sorted string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The string to be sorted.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An options object that determines how to sort is carried out on the string.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "alphabetic"
+                
+                </td>
+            
+
+            <td class="description last"><p>The sort type. One of either &quot;alphabetic&quot;, &quot;numeric&quot;.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>order</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "asc"
+                
+                </td>
+            
+
+            <td class="description last"><p>The order of the sort. One of either &quot;asc&quot; or &quot;desc&quot;.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2335">line 2335</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The sorted string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "Apple 1Apple 1Banana Banana $100, 2 100";Str.sort(myString); // returns "sort"Str.sort(myString); // returns 7</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".startsWith">
+        <a href="#.startsWith">#</a>
+        <span class="type-signature">(static) </span>startsWith<span class="signature">(str, target, startpos<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Boolean}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method checks to see if a given string begins with a particular substring. This is a case-sensitive method</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string reference to make the search on.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The target string to check for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>startpos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>The position to which the search is started in the reference string length. Default(0)</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1695">line 1695</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the test</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Boolean</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";Str.startsWith(myString, "ToolJS"); // returns trueStr.startsWith(myString, "R", 7); // returns true</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".stripNums">
+        <a href="#.stripNums">#</a>
+        <span class="type-signature">(static) </span>stripNums<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method strips off numbers from a string and returns the rest of the string. If no number was found in the string, then it returns the original string back.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to strip of its numbers.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2415">line 2415</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The remaining string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is a sample 67 string with 1 3numbers65432";Str.stripNums(myString); // returns "This is a sample string";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".stripSpecialChars">
+        <a href="#.stripSpecialChars">#</a>
+        <span class="type-signature">(static) </span>stripSpecialChars<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method strips off any special character from a string and returns the rest of the string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to strip of its special characters.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2449">line 2449</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The remaining string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is a sample string. &amp;(£*!£()£#'')# ";Str.stripSpecialChars(myString); // returns "This is a sample string";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toggleCase">
+        <a href="#.toggleCase">#</a>
+        <span class="type-signature">(static) </span>toggleCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method toggles an uppercase string to lowercase and vise versa. If the original string is not in either upper or lower case, then the no conversion is made.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be toggled</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1874">line 1874</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The new string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Str.toggleCase("i am in lowercase"); // returns "I AM IN LOWERCASE";Str.toggleCase("I AM IN UPPERCASE"); // returns "i am in uppercase";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toHashTag">
+        <a href="#.toHashTag">#</a>
+        <span class="type-signature">(static) </span>toHashTag<span class="signature">(str, toUpper<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a given string to a hashtag string.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be converted.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>toUpper</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Determines whether the hashtag string should be made uppercase. Default value(false) .</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1911">line 1911</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The hashtagged string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "Black Lives Matter";var myString2 = "toolJS is awesome";Str.toHashTag(myString, true); // returns "#BLACKLIVESMATTER";Str.toHashTag(myString2); // returns "#ToolJSIsAwesome"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toLower">
+        <a href="#.toLower">#</a>
+        <span class="type-signature">(static) </span>toLower<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a string to tolower.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be converted to lowercase</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1568">line 1568</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS_IS_an-Awesome-library, TRY IT OUT";Str.toLower(myString); // returns "tooljs_is_an-awesome-library, try it out";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toString">
+        <a href="#.toString">#</a>
+        <span class="type-signature">(static) </span>toString<span class="signature">(value)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a non-string value or item to a string and returns it.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The to be converted to a string.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1895">line 1895</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The new string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>Str.toString(45); // returns "45";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".toUpper">
+        <a href="#.toUpper">#</a>
+        <span class="type-signature">(static) </span>toUpper<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a string to uppercase.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be converted to uppercase</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1585">line 1585</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "toolJS_is_an-awesome-library, try it out";Str.toUpper(myString); // returns "TOOLJS_IS_AN-AWESOME-LIBRARY, TRY IT OUT";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".trim">
+        <a href="#.trim">#</a>
+        <span class="type-signature">(static) </span>trim<span class="signature">(str, deep<span class="signature-attributes">opt</span>, char<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method removes leading and trialing whitespaces of a string, if the deep parameter is set to true, then it also removes extra whitespace between the string characters.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be trimmed.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>deep</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    false
+                
+                </td>
+            
+
+            <td class="description last"><p>Determines whether to do a deep trim on the string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>char</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Boolean</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    " "
+                
+                </td>
+            
+
+            <td class="description last"><p>Specifies which character is to be trimmed off. Default value(&quot; &quot;);</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1758">line 1758</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The trimmed string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "   ToolJS    Rocks    ";var myString2 = " The extra   whitespaces within   this    string   will   be removed";Str.trim(myString); // returns "ToolJS    Rocks";Str.trim(myString2, true); // returns "The extra whitespaces within this string will be removed"</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".truncate">
+        <a href="#.truncate">#</a>
+        <span class="type-signature">(static) </span>truncate<span class="signature">(str, options<span class="signature-attributes">opt</span>, replacement<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method truncates a given string to a given length and appends a given string at the end.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be truncated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>An option object determines how the string is truncated. If passed a number then it represents the string limit.</p>
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>limit</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    30
+                
+                </td>
+            
+
+            <td class="description last"><p>The maximum length allowed for the truncated string.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>replacement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "..."
+                
+                </td>
+            
+
+            <td class="description last"><p>The replacement string to be appended at the end of the truncated string.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>replacement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    "..."
+                
+                </td>
+            
+
+            <td class="description last"><p>The replacement string for the truncated string. This is used only when a number is passed to the preceeding parameter.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2174">line 2174</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The truncated string.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is a long string, which will be truncated into a shorter version";Str.truncate(myString, 21, "[...]"); // returns "This is a long string[...]";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".upperCase">
+        <a href="#.upperCase">#</a>
+        <span class="type-signature">(static) </span>upperCase<span class="signature">(str)</span><span class="type-signature"> &rarr; {String}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method converts a string to uppercase, separating each word by a space.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be converted to uppercase</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1548">line 1548</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The converted string</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">String</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "toolJS_is_an-awesome-library, try it out";Str.upperCase(myString); // returns "TOOLJS IS AN AWESOME LIBRARY, TRY IT OUT";</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".wordChunk">
+        <a href="#.wordChunk">#</a>
+        <span class="type-signature">(static) </span>wordChunk<span class="signature">(str, size)</span><span class="type-signature"> &rarr; {Array.&lt;Array>}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method creates an array of words split into groups the length of a specified size. Leftover words are placed in a single array.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string to be split into chunks of words.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>size</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The size of each chunk of word.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2145">line 2145</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>An array of chunks of words.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array.&lt;Array></span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is a long string, which will be split into chunks of words";Str.wordChunk(myString, 4); // returns [["This" "is" "a" "long"], ["string", "which" "will" "be"], ["split", "into", "chunks", "of"], ["words"]]</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".wordCount">
+        <a href="#.wordCount">#</a>
+        <span class="type-signature">(static) </span>wordCount<span class="signature">(str, start<span class="signature-attributes">opt</span>, end<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Number}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method counts the number of words presents in a string and returns the value.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+        <th>Default</th>
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                </td>
+            
+
+            <td class="description last"><p>The string to be counted.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>start</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    0
+                
+                </td>
+            
+
+            <td class="description last"><p>If passed a number, then the count will start at the index corresponding with the number.<br>
+But if passed a string, then the count will start at the first occurance of the string</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>end</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+                <td class="default">
+                
+                    str.length
+                
+                </td>
+            
+
+            <td class="description last"><p>If passed a number, then the count will end at the index corresponding with the number.<br>
+But if passed a string, then the count will end at the last occurance of the string</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2108">line 2108</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>The result of the count</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "ToolJS Rocks";var myString2 = "This is a longer string, but the count will start from the word 'but' and end at 'start'";var out = Str.wordCount(myString); // returns 2var out = Str.wordCount(myString, "Rocks"); // returns 1var out = Str.wordCount(myString2, 24, 43); // returns 5var out = Str.wordCount(myString2, "longer", "will"); // returns 6</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".words">
+        <a href="#.words">#</a>
+        <span class="type-signature">(static) </span>words<span class="signature">(strings)</span><span class="type-signature"> &rarr; {Array}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns an array containing each word in a string or an array of strings.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>strings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose words are to be returned. Could be an array of strings.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line1602">line 1602</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>An array of the words found in the string(s).</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is the first sentence";var mySecondString = "This is second sentence";Str.words(myString); // returns ["This", "is", "the", "first", "sentence"]Str.words(myString, mySecondString);// returns ["This", "is", "the", "first", "sentence", "This", "is", "second", "sentence"]);</code></pre>
+
+    </div>
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".wordsExclude">
+        <a href="#.wordsExclude">#</a>
+        <span class="type-signature">(static) </span>wordsExclude<span class="signature">(exclude, strings)</span><span class="type-signature"> &rarr; {Array}</span>
+    </h4>
+
+    
+
+
+
+    <div class="description">
+        <p>This method returns an array containing each word in a string or an array of strings, while excluding a set of specified words</p>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Parameters:</strong>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>exclude</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array of words to exclude from the result if found in the given string. Could be a single string</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>strings</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+|
+
+<span class="param-type">Array.&lt;String></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The string whose camel case version is to be returned</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <div class="details-item-container">
+            <dt class="tag-source">Source:</dt>
+            <dd class="tag-source"><ul class="dummy"><li>
+                <a href="tooljs.esm.js.html">tooljs.esm.js</a>, <a href="tooljs.esm.js.html#line2465">line 2465</a>
+            </li></ul></dd>
+        </div>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="method-member-container mt-20">
+    <strong>Returns:</strong>
+        
+            
+<div class="param-desc">
+    <p>An array of the words found in the string(s).</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Array</span>
+
+
+    </dd>
+</dl>
+
+    </div>
+
+
+
+    <div class="method-member-container flex flex-col w-100 overflow-auto mt-20">
+        <strong>Example</strong>
+        
+    <pre class="prettyprint"><code>var myString = "This is the first sentence";var mySecondString = "This is another sentence";Str.wordsExclude("sentence", myString, mySecondString);// returns ["is", "the", "first", "sentence", "is", "another", "sentence"]</code></pre>
+
+    </div>
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<footer id="footer">
+  Copyright &copy; 2020 ToolJS Library Documentation
+</footer>
+
+<script src="scripts/third-party/prettify.js"></script>
+<script src="scripts/third-party/lang-css.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/third-party/fuse.js"></script>
+<script type="text/javascript" src="scripts/misc.js"></script>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/fix-code-block.js"></script>
+<script>
+  var list = [{"title":"create-plugin","link":"create-plugin"},{"title":"dom-tuts","link":"dom-tuts"},{"title":"getting-started","link":"getting-started"},{"title":"ToolJS","link":"<a href=\"ToolJS.html\">ToolJS</a>"},{"title":"Calc","link":"<a href=\"module-Calc.html\">Calc</a>"},{"title":"module:Calc.add","link":"<a href=\"module-Calc.html#.add\">module:Calc.add &rtrif; undefined</a>"},{"title":"module:Calc.divide","link":"<a href=\"module-Calc.html#.divide\">module:Calc.divide &rtrif; undefined</a>"},{"title":"module:Calc.evaluate","link":"<a href=\"module-Calc.html#.evaluate\">module:Calc.evaluate &rtrif; undefined</a>"},{"title":"module:Calc.exponential","link":"<a href=\"module-Calc.html#.exponential\">module:Calc.exponential &rtrif; undefined</a>"},{"title":"module:Calc.max","link":"<a href=\"module-Calc.html#.max\">module:Calc.max &rtrif; undefined</a>"},{"title":"module:Calc.mean","link":"<a href=\"module-Calc.html#.mean\">module:Calc.mean &rtrif; undefined</a>"},{"title":"module:Calc.median","link":"<a href=\"module-Calc.html#.median\">module:Calc.median &rtrif; undefined</a>"},{"title":"module:Calc.min","link":"<a href=\"module-Calc.html#.min\">module:Calc.min &rtrif; undefined</a>"},{"title":"module:Calc.mode","link":"<a href=\"module-Calc.html#.mode\">module:Calc.mode &rtrif; undefined</a>"},{"title":"module:Calc.modulo","link":"<a href=\"module-Calc.html#.modulo\">module:Calc.modulo &rtrif; undefined</a>"},{"title":"module:Calc.multiply","link":"<a href=\"module-Calc.html#.multiply\">module:Calc.multiply &rtrif; undefined</a>"},{"title":"module:Calc.pow","link":"<a href=\"module-Calc.html#.pow\">module:Calc.pow &rtrif; undefined</a>"},{"title":"module:Calc.subtract","link":"<a href=\"module-Calc.html#.subtract\">module:Calc.subtract &rtrif; undefined</a>"},{"title":"DOM","link":"<a href=\"module-DOM.html\">DOM</a>"},{"title":"module:DOM.addClass","link":"<a href=\"module-DOM.html#.addClass\">module:DOM.addClass &rtrif; undefined</a>"},{"title":"module:DOM.attr","link":"<a href=\"module-DOM.html#.attr\">module:DOM.attr &rtrif; undefined</a>"},{"title":"module:DOM.childrenEl","link":"<a href=\"module-DOM.html#.childrenEl\">module:DOM.childrenEl &rtrif; undefined</a>"},{"title":"module:DOM.cloneEl","link":"<a href=\"module-DOM.html#.cloneEl\">module:DOM.cloneEl &rtrif; undefined</a>"},{"title":"module:DOM.createEl","link":"<a href=\"module-DOM.html#.createEl\">module:DOM.createEl &rtrif; undefined</a>"},{"title":"module:DOM.createText","link":"<a href=\"module-DOM.html#.createText\">module:DOM.createText &rtrif; undefined</a>"},{"title":"module:DOM.css","link":"<a href=\"module-DOM.html#.css\">module:DOM.css &rtrif; undefined</a>"},{"title":"module:DOM.dataAttr","link":"<a href=\"module-DOM.html#.dataAttr\">module:DOM.dataAttr &rtrif; undefined</a>"},{"title":"module:DOM.each","link":"<a href=\"module-DOM.html#.each\">module:DOM.each &rtrif; undefined</a>"},{"title":"module:DOM.find","link":"<a href=\"module-DOM.html#.find\">module:DOM.find &rtrif; undefined</a>"},{"title":"module:DOM.firstChildEl","link":"<a href=\"module-DOM.html#.firstChildEl\">module:DOM.firstChildEl &rtrif; undefined</a>"},{"title":"module:DOM.getAttr","link":"<a href=\"module-DOM.html#.getAttr\">module:DOM.getAttr &rtrif; undefined</a>"},{"title":"module:DOM.getEl","link":"<a href=\"module-DOM.html#.getEl\">module:DOM.getEl &rtrif; undefined</a>"},{"title":"module:DOM.getStyle","link":"<a href=\"module-DOM.html#.getStyle\">module:DOM.getStyle &rtrif; undefined</a>"},{"title":"module:DOM.hasClass","link":"<a href=\"module-DOM.html#.hasClass\">module:DOM.hasClass &rtrif; undefined</a>"},{"title":"module:DOM.height","link":"<a href=\"module-DOM.html#.height\">module:DOM.height &rtrif; undefined</a>"},{"title":"module:DOM.html","link":"<a href=\"module-DOM.html#.html\">module:DOM.html &rtrif; undefined</a>"},{"title":"module:DOM.isCollection","link":"<a href=\"module-DOM.html#.isCollection\">module:DOM.isCollection &rtrif; undefined</a>"},{"title":"module:DOM.isEl","link":"<a href=\"module-DOM.html#.isEl\">module:DOM.isEl &rtrif; undefined</a>"},{"title":"module:DOM.isNodeList","link":"<a href=\"module-DOM.html#.isNodeList\">module:DOM.isNodeList &rtrif; undefined</a>"},{"title":"module:DOM.lastChildEl","link":"<a href=\"module-DOM.html#.lastChildEl\">module:DOM.lastChildEl &rtrif; undefined</a>"},{"title":"module:DOM.moveEl","link":"<a href=\"module-DOM.html#.moveEl\">module:DOM.moveEl &rtrif; undefined</a>"},{"title":"module:DOM.next","link":"<a href=\"module-DOM.html#.next\">module:DOM.next &rtrif; undefined</a>"},{"title":"module:DOM.offset","link":"<a href=\"module-DOM.html#.offset\">module:DOM.offset &rtrif; undefined</a>"},{"title":"module:DOM.on","link":"<a href=\"module-DOM.html#.on\">module:DOM.on &rtrif; undefined</a>"},{"title":"module:DOM.prev","link":"<a href=\"module-DOM.html#.prev\">module:DOM.prev &rtrif; undefined</a>"},{"title":"module:DOM.removeAttr","link":"<a href=\"module-DOM.html#.removeAttr\">module:DOM.removeAttr &rtrif; undefined</a>"},{"title":"module:DOM.removeChild","link":"<a href=\"module-DOM.html#.removeChild\">module:DOM.removeChild &rtrif; undefined</a>"},{"title":"module:DOM.removeClass","link":"<a href=\"module-DOM.html#.removeClass\">module:DOM.removeClass &rtrif; undefined</a>"},{"title":"module:DOM.removeEl","link":"<a href=\"module-DOM.html#.removeEl\">module:DOM.removeEl &rtrif; undefined</a>"},{"title":"module:DOM.replaceEl","link":"<a href=\"module-DOM.html#.replaceEl\">module:DOM.replaceEl &rtrif; undefined</a>"},{"title":"module:DOM.setAttr","link":"<a href=\"module-DOM.html#.setAttr\">module:DOM.setAttr &rtrif; undefined</a>"},{"title":"module:DOM.siblings","link":"<a href=\"module-DOM.html#.siblings\">module:DOM.siblings &rtrif; undefined</a>"},{"title":"module:DOM.styleEl","link":"<a href=\"module-DOM.html#.styleEl\">module:DOM.styleEl &rtrif; undefined</a>"},{"title":"module:DOM.text","link":"<a href=\"module-DOM.html#.text\">module:DOM.text &rtrif; undefined</a>"},{"title":"module:DOM.toggleClass","link":"<a href=\"module-DOM.html#.toggleClass\">module:DOM.toggleClass &rtrif; undefined</a>"},{"title":"module:DOM.ToolJSNodeList","link":"<a href=\"module-DOM.html#.ToolJSNodeList\">module:DOM.ToolJSNodeList &rtrif; undefined</a>"},{"title":"module:DOM.width","link":"<a href=\"module-DOM.html#.width\">module:DOM.width &rtrif; undefined</a>"},{"title":"module:DOM.wrap","link":"<a href=\"module-DOM.html#.wrap\">module:DOM.wrap &rtrif; undefined</a>"},{"title":"Num","link":"<a href=\"module-Num.html\">Num</a>"},{"title":"module:Num.decrement","link":"<a href=\"module-Num.html#.decrement\">module:Num.decrement &rtrif; undefined</a>"},{"title":"module:Num.increment","link":"<a href=\"module-Num.html#.increment\">module:Num.increment &rtrif; undefined</a>"},{"title":"module:Num.inRange","link":"<a href=\"module-Num.html#.inRange\">module:Num.inRange &rtrif; undefined</a>"},{"title":"module:Num.isEven","link":"<a href=\"module-Num.html#.isEven\">module:Num.isEven &rtrif; undefined</a>"},{"title":"module:Num.isNum","link":"<a href=\"module-Num.html#.isNum\">module:Num.isNum &rtrif; undefined</a>"},{"title":"module:Num.isOdd","link":"<a href=\"module-Num.html#.isOdd\">module:Num.isOdd &rtrif; undefined</a>"},{"title":"module:Num.rand","link":"<a href=\"module-Num.html#.rand\">module:Num.rand &rtrif; undefined</a>"},{"title":"module:Num.range","link":"<a href=\"module-Num.html#.range\">module:Num.range &rtrif; undefined</a>"},{"title":"module:Num.round","link":"<a href=\"module-Num.html#.round\">module:Num.round &rtrif; undefined</a>"},{"title":"Obj","link":"<a href=\"module-Obj.html\">Obj</a>"},{"title":"module:Obj.entries","link":"<a href=\"module-Obj.html#.entries\">module:Obj.entries &rtrif; undefined</a>"},{"title":"module:Obj.extend","link":"<a href=\"module-Obj.html#.extend\">module:Obj.extend &rtrif; undefined</a>"},{"title":"module:Obj.forEach","link":"<a href=\"module-Obj.html#.forEach\">module:Obj.forEach &rtrif; undefined</a>"},{"title":"module:Obj.includes","link":"<a href=\"module-Obj.html#.includes\">module:Obj.includes &rtrif; undefined</a>"},{"title":"module:Obj.indexOf","link":"<a href=\"module-Obj.html#.indexOf\">module:Obj.indexOf &rtrif; undefined</a>"},{"title":"module:Obj.isEmpty","link":"<a href=\"module-Obj.html#.isEmpty\">module:Obj.isEmpty &rtrif; undefined</a>"},{"title":"module:Obj.isObj","link":"<a href=\"module-Obj.html#.isObj\">module:Obj.isObj &rtrif; undefined</a>"},{"title":"module:Obj.isObj","link":"<a href=\"module-Obj.html#.isObj\">module:Obj.isObj &rtrif; undefined</a>"},{"title":"module:Obj.keyAt","link":"<a href=\"module-Obj.html#.keyAt\">module:Obj.keyAt &rtrif; undefined</a>"},{"title":"module:Obj.keys","link":"<a href=\"module-Obj.html#.keys\">module:Obj.keys &rtrif; undefined</a>"},{"title":"module:Obj.pop","link":"<a href=\"module-Obj.html#.pop\">module:Obj.pop &rtrif; undefined</a>"},{"title":"module:Obj.push","link":"<a href=\"module-Obj.html#.push\">module:Obj.push &rtrif; undefined</a>"},{"title":"module:Obj.remove","link":"<a href=\"module-Obj.html#.remove\">module:Obj.remove &rtrif; undefined</a>"},{"title":"module:Obj.set","link":"<a href=\"module-Obj.html#.set\">module:Obj.set &rtrif; undefined</a>"},{"title":"module:Obj.toArray","link":"<a href=\"module-Obj.html#.toArray\">module:Obj.toArray &rtrif; undefined</a>"},{"title":"module:Obj.toObj","link":"<a href=\"module-Obj.html#.toObj\">module:Obj.toObj &rtrif; undefined</a>"},{"title":"module:Obj.toPropArray","link":"<a href=\"module-Obj.html#.toPropArray\">module:Obj.toPropArray &rtrif; undefined</a>"},{"title":"module:Obj.valueAt","link":"<a href=\"module-Obj.html#.valueAt\">module:Obj.valueAt &rtrif; undefined</a>"},{"title":"module:Obj.valueOf","link":"<a href=\"module-Obj.html#.valueOf\">module:Obj.valueOf &rtrif; undefined</a>"},{"title":"module:Obj.values","link":"<a href=\"module-Obj.html#.values\">module:Obj.values &rtrif; undefined</a>"},{"title":"Str","link":"<a href=\"module-Str.html\">Str</a>"},{"title":"module:Str.between","link":"<a href=\"module-Str.html#.between\">module:Str.between &rtrif; undefined</a>"},{"title":"module:Str.camelCase","link":"<a href=\"module-Str.html#.camelCase\">module:Str.camelCase &rtrif; undefined</a>"},{"title":"module:Str.capitalize","link":"<a href=\"module-Str.html#.capitalize\">module:Str.capitalize &rtrif; undefined</a>"},{"title":"module:Str.charAt","link":"<a href=\"module-Str.html#.charAt\">module:Str.charAt &rtrif; undefined</a>"},{"title":"module:Str.chars","link":"<a href=\"module-Str.html#.chars\">module:Str.chars &rtrif; undefined</a>"},{"title":"module:Str.compare","link":"<a href=\"module-Str.html#.compare\">module:Str.compare &rtrif; undefined</a>"},{"title":"module:Str.concat","link":"<a href=\"module-Str.html#.concat\">module:Str.concat &rtrif; undefined</a>"},{"title":"module:Str.endsWith","link":"<a href=\"module-Str.html#.endsWith\">module:Str.endsWith &rtrif; undefined</a>"},{"title":"module:Str.firstChar","link":"<a href=\"module-Str.html#.firstChar\">module:Str.firstChar &rtrif; undefined</a>"},{"title":"module:Str.firstToLower","link":"<a href=\"module-Str.html#.firstToLower\">module:Str.firstToLower &rtrif; undefined</a>"},{"title":"module:Str.firstToUpper","link":"<a href=\"module-Str.html#.firstToUpper\">module:Str.firstToUpper &rtrif; undefined</a>"},{"title":"module:Str.getNums","link":"<a href=\"module-Str.html#.getNums\">module:Str.getNums &rtrif; undefined</a>"},{"title":"module:Str.hasNums","link":"<a href=\"module-Str.html#.hasNums\">module:Str.hasNums &rtrif; undefined</a>"},{"title":"module:Str.htmldecode","link":"<a href=\"module-Str.html#.htmldecode\">module:Str.htmldecode &rtrif; undefined</a>"},{"title":"module:Str.htmlencode","link":"<a href=\"module-Str.html#.htmlencode\">module:Str.htmlencode &rtrif; undefined</a>"},{"title":"module:Str.isLower","link":"<a href=\"module-Str.html#.isLower\">module:Str.isLower &rtrif; undefined</a>"},{"title":"module:Str.isString","link":"<a href=\"module-Str.html#.isString\">module:Str.isString &rtrif; undefined</a>"},{"title":"module:Str.isUpper","link":"<a href=\"module-Str.html#.isUpper\">module:Str.isUpper &rtrif; undefined</a>"},{"title":"module:Str.joinBy","link":"<a href=\"module-Str.html#.joinBy\">module:Str.joinBy &rtrif; undefined</a>"},{"title":"module:Str.lastChar","link":"<a href=\"module-Str.html#.lastChar\">module:Str.lastChar &rtrif; undefined</a>"},{"title":"module:Str.longest","link":"<a href=\"module-Str.html#.longest\">module:Str.longest &rtrif; undefined</a>"},{"title":"module:Str.lowerCase","link":"<a href=\"module-Str.html#.lowerCase\">module:Str.lowerCase &rtrif; undefined</a>"},{"title":"module:Str.pad","link":"<a href=\"module-Str.html#.pad\">module:Str.pad &rtrif; undefined</a>"},{"title":"module:Str.random","link":"<a href=\"module-Str.html#.random\">module:Str.random &rtrif; undefined</a>"},{"title":"module:Str.repeat","link":"<a href=\"module-Str.html#.repeat\">module:Str.repeat &rtrif; undefined</a>"},{"title":"module:Str.replace","link":"<a href=\"module-Str.html#.replace\">module:Str.replace &rtrif; undefined</a>"},{"title":"module:Str.reverse","link":"<a href=\"module-Str.html#.reverse\">module:Str.reverse &rtrif; undefined</a>"},{"title":"module:Str.shortest","link":"<a href=\"module-Str.html#.shortest\">module:Str.shortest &rtrif; undefined</a>"},{"title":"module:Str.shuffle","link":"<a href=\"module-Str.html#.shuffle\">module:Str.shuffle &rtrif; undefined</a>"},{"title":"module:Str.slugify","link":"<a href=\"module-Str.html#.slugify\">module:Str.slugify &rtrif; undefined</a>"},{"title":"module:Str.sort","link":"<a href=\"module-Str.html#.sort\">module:Str.sort &rtrif; undefined</a>"},{"title":"module:Str.startsWith","link":"<a href=\"module-Str.html#.startsWith\">module:Str.startsWith &rtrif; undefined</a>"},{"title":"module:Str.stripNums","link":"<a href=\"module-Str.html#.stripNums\">module:Str.stripNums &rtrif; undefined</a>"},{"title":"module:Str.stripSpecialChars","link":"<a href=\"module-Str.html#.stripSpecialChars\">module:Str.stripSpecialChars &rtrif; undefined</a>"},{"title":"module:Str.toggleCase","link":"<a href=\"module-Str.html#.toggleCase\">module:Str.toggleCase &rtrif; undefined</a>"},{"title":"module:Str.toHashTag","link":"<a href=\"module-Str.html#.toHashTag\">module:Str.toHashTag &rtrif; undefined</a>"},{"title":"module:Str.toLower","link":"<a href=\"module-Str.html#.toLower\">module:Str.toLower &rtrif; undefined</a>"},{"title":"module:Str.toString","link":"<a href=\"module-Str.html#.toString\">module:Str.toString &rtrif; undefined</a>"},{"title":"module:Str.toUpper","link":"<a href=\"module-Str.html#.toUpper\">module:Str.toUpper &rtrif; undefined</a>"},{"title":"module:Str.trim","link":"<a href=\"module-Str.html#.trim\">module:Str.trim &rtrif; undefined</a>"},{"title":"module:Str.truncate","link":"<a href=\"module-Str.html#.truncate\">module:Str.truncate &rtrif; undefined</a>"},{"title":"module:Str.upperCase","link":"<a href=\"module-Str.html#.upperCase\">module:Str.upperCase &rtrif; undefined</a>"},{"title":"module:Str.wordChunk","link":"<a href=\"module-Str.html#.wordChunk\">module:Str.wordChunk &rtrif; undefined</a>"},{"title":"module:Str.wordCount","link":"<a href=\"module-Str.html#.wordCount\">module:Str.wordCount &rtrif; undefined</a>"},{"title":"module:Str.words","link":"<a href=\"module-Str.html#.words\">module:Str.words &rtrif; undefined</a>"},{"title":"module:Str.wordsExclude","link":"<a href=\"module-Str.html#.wordsExclude\">module:Str.wordsExclude &rtrif; undefined</a>"},{"title":"Utils","link":"<a href=\"module-Utils.html\">Utils</a>"},{"title":"module:Utils.checkCookie","link":"<a href=\"module-Utils.html#.checkCookie\">module:Utils.checkCookie &rtrif; undefined</a>"},{"title":"module:Utils.deleteCookie","link":"<a href=\"module-Utils.html#.deleteCookie\">module:Utils.deleteCookie &rtrif; undefined</a>"},{"title":"module:Utils.getCookie","link":"<a href=\"module-Utils.html#.getCookie\">module:Utils.getCookie &rtrif; undefined</a>"},{"title":"module:Utils.importScript","link":"<a href=\"module-Utils.html#.importScript\">module:Utils.importScript &rtrif; undefined</a>"},{"title":"module:Utils.observeMutation","link":"<a href=\"module-Utils.html#.observeMutation\">module:Utils.observeMutation &rtrif; undefined</a>"},{"title":"module:Utils.setCookie","link":"<a href=\"module-Utils.html#.setCookie\">module:Utils.setCookie &rtrif; undefined</a>"},{"title":"module:Utils.typeOf","link":"<a href=\"module-Utils.html#.typeOf\">module:Utils.typeOf &rtrif; undefined</a>"}];
+  var options = true
+  setupSearch(list, options)
+</script>
+
+ 
+
+
+
+
+  <script type="text/javascript">
+    var option = JSON.parse('{"options":{}}')
+    console.log(option)
+    document.addEventListener("DOMContentLoaded", function() {
+    OverlayScrollbars(document.querySelectorAll('body'), option.option || {});
+  });
+  </script>
+
+
+
+</body>
+</html>
