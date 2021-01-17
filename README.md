@@ -21,7 +21,7 @@ Why write or copy the same code over and over again when you could just have it 
   - [Credits](#credits)
 
 ### Documentation
-See the full documentation and api here <a href="#">ToolJS Documentation and API</a>
+See the full documentation and api here <a href="https://redeakaa.github.io/ToolJS/">ToolJS Documentation and API</a>
 
 ### Installation:
 
@@ -126,7 +126,7 @@ console.log(myObj);
 // => { 0: "John Doe", 1: "Male" }
 ```
 
-Check out the libraries official <a href="#">documentation</a> page to see a list of all available methods for each module and <a href="#">how to create a module/plugin</a> of your own.
+Check out the libraries official <a href="https://redeakaa.github.io/ToolJS/">documentation</a> page to see a list of all available methods for each module and <a href="https://redeakaa.github.io/ToolJS/tutorial-create-plugin.html">how to create a module/plugin</a> of your own.
 
 ### Contributions
 Please feel free to make contributions to this project at any point in time. Find any bug, open an issue and we'll fix it together.
