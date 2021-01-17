@@ -1,0 +1,13 @@
+assets/
+backup/
+dist/
+docs/
+node_modules/
+src/
+kept/
+test/
+tuts/
+./favicon.ico
+.vscode
+./jsdoc*
+./rollup.config2.js

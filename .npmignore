@@ -1,0 +1,17 @@
+assets/*
+backup/*
+docs/*
+node_modules/*
+src/*
+kept/*
+test/*
+tuts/*
+.babelrc.json
+.eslintignore
+.eslintrc
+.gitignore
+./favicon.ico
+./jsdoc*
+./package-lock.json
+./rollup.config*
+.vscode

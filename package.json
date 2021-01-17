@@ -1,0 +1,51 @@
+{
+  "name": "@redeakaa/tooljs",
+  "version": "1.0.1",
+  "description": "A collection of useful JavaScript functions and methods for front-end development",
+  "main": "./dist/cjs/bundle.cjs.js",
+  "module": "./dist/esm/bundle.esm.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "dev-alt": "rollup -c ./rollup.config2.js -w",
+    "docsmd": "jsdoc2md %npm_package_main% > ./docs/README.md",
+    "docsweb": "jsdoc --configure jsdoc.config.js --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/redeakaa/ToolJS.git"
+  },
+  "keywords": [
+    "tools",
+    "tooljs",
+    "toolbox",
+    "toolkit",
+    "jstools",
+    "utilities",
+    "utils",
+    "js-utils",
+    "tool-js"
+  ],
+  "author": "Okoro Redemption",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redeakaa/ToolJS/issues"
+  },
+  "homepage": "https://github.com/redeakaa/ToolJS",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "clean-jsdoc-theme": "^3.0.6",
+    "jsdoc-babel": "^0.5.0",
+    "rollup": "^2.35.1",
+    "rollup-plugin-jsdoc": "^0.1.2",
+    "rollup-plugin-terser": "^7.0.2"
+  },
+  "dependencies": {}
+}
