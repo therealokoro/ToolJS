@@ -28,7 +28,7 @@ See the full documentation and api here <a href="#">ToolJS Documentation and API
 **In Node.js**
 
 ```
-npm install @redeakaa/toojs
+npm install @redeakaa/tooljs
 ```
 
 **For Browser**
