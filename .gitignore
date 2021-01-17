@@ -1,8 +1,6 @@
 assets/
 backup/
-dist/
 node_modules/
-src/
 kept/
 test/
 tuts/
