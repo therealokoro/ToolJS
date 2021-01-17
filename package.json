@@ -2,8 +2,8 @@
   "name": "@redeakaa/tooljs",
   "version": "1.0.1",
   "description": "A collection of useful JavaScript functions and methods for front-end development",
-  "main": "./dist/cjs/bundle.cjs.js",
-  "module": "./dist/esm/bundle.esm.js",
+  "main": "./dist/cjs/tooljs.cjs.js",
+  "module": "./dist/esm/tooljs.esm.js",
   "files": [
     "dist/"
   ],
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/redeakaa/ToolJS/issues"
   },
-  "homepage": "https://github.com/redeakaa/ToolJS",
+  "homepage": "https://redeakaa.github.io/ToolJS",
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",

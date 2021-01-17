@@ -9,9 +9,9 @@ Why write or copy the same code over and over again when you could just have it 
 <ul class="custom-theme-btn">
   <li><a download="tooljs-v1.0.1.js" href="https://unpkg.com/@redeakaa/tooljs@1.0.1/dist/umd/tooljs.umd.js">ToolJS Version 1.0.1 Version</a></li>
 
-  <li><a download href="https://unpkg.com/@redeakaa/tooljs@1.0.1/dist/umd/tooljs-v1.0.1.min.js">ToolJS Version 1.0.1 Minified Version</a></li>
+  <li><a download="tooljs-v1.0.1.min.js" href="https://unpkg.com/@redeakaa/tooljs@1.0.1/dist/umd/tooljs.min.js">ToolJS Version 1.0.1 Minified Version</a></li>
 
-  <li><a download href="https://unpkg.com/@redeakaa/tooljs@1.0.1/dist/esm/tooljs-v1.0.1.esm.js">ToolJS ES6 Version 1.0.1</a></li>
+  <li><a download="tooljs-v1.0.1.esm.js" href="https://unpkg.com/@redeakaa/tooljs@1.0.1/dist/esm/tooljs.esm.js">ToolJS ES6 Version 1.0.1</a></li>
 </ul>
 
 ### Contributions
